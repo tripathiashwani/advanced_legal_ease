@@ -1,0 +1,13 @@
+.env
+advanced_legal_ease\.env
+
+.env
+.venv
+env/
+venv/
+
+.env
+.venv
+
+
+__pycache__/
