@@ -30,7 +30,7 @@ A scalable, modern platform simplifying civil mediation and hearings, reducing o
 
 ## 🏗️ Architecture
 
-[architecture](https://github.com/user-attachments/assets/5deab73f-0e42-4f9f-95d2-d7bd43a6625a)
+![architecture](https://github.com/user-attachments/assets/5deab73f-0e42-4f9f-95d2-d7bd43a6625a)
 
 
 - **Nginx Ingress** to route client requests  
