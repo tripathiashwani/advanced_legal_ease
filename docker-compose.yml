@@ -1,0 +1,144 @@
+version: '3.9'
+
+services:
+  # Gateway: Kong
+  kong:
+    image: kong:latest
+    environment:
+      KONG_DATABASE: off
+      KONG_DECLARATIVE_CONFIG: /usr/local/kong/declarative/kong.yml
+    volumes:
+      - ./gateway/kong.yml:/usr/local/kong/declarative/kong.yml
+    ports:
+      - "8000:8000"    # Proxy
+      - "8443:8443"    # Proxy SSL
+      - "8001:8001"    # Admin API
+      - "8444:8444"    # Admin API SSL
+    depends_on:
+      - nginx
+
+  # Nginx ingress (acts as web server / static assets)
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./gateway/nginx.conf:/etc/nginx/nginx.conf
+      - ./frontend/dist:/usr/share/nginx/html
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+
+  # PostgreSQL (single shared DB cluster for all microservices)
+  postgres:
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_USER: eportal_user
+      POSTGRES_PASSWORD: eportal_pass
+      POSTGRES_DB: eportal_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # Redis
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+  # Kafka
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+    ports:
+      - "2181:2181"
+
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  # Microservices
+  ai_service:
+    build: ./services/ai_service
+    ports:
+      - "8005:8005"
+    environment:
+      - DATABASE_URL=postgres://eportal_user:eportal_pass@postgres:5432/eportal_db
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - postgres
+      - redis
+      - kafka
+
+  case_service:
+    build: ./services/case_service
+    ports:
+      - "8001:8001"
+    environment:
+      - DATABASE_URL=postgres://eportal_user:eportal_pass@postgres:5432/eportal_db
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - postgres
+      - redis
+      - kafka
+
+  notification_service:
+    build: ./services/notification_service
+    ports:
+      - "8002:8002"
+    environment:
+      - DATABASE_URL=postgres://eportal_user:eportal_pass@postgres:5432/eportal_db
+      - REDIS_URL=redis://redis:6379/0
+      - KAFKA_BROKER=kafka:9092
+    depends_on:
+      - postgres
+      - redis
+      - kafka
+
+  payment_service:
+    build: ./services/payment_service
+    ports:
+      - "8003:8003"
+    environment:
+      - DATABASE_URL=postgres://eportal_user:eportal_pass@postgres:5432/eportal_db
+    depends_on:
+      - postgres
+
+  schedule_service:
+    build: ./services/schedule_service
+    ports:
+      - "8004:8004"
+    environment:
+      - DATABASE_URL=postgres://eportal_user:eportal_pass@postgres:5432/eportal_db
+    depends_on:
+      - postgres
+
+  video_service:
+    build: ./services/video_service
+    ports:
+      - "8006:8006"
+    environment:
+      - DATABASE_URL=postgres://eportal_user:eportal_pass@postgres:5432/eportal_db
+    depends_on:
+      - postgres
+
+  frontend:
+    build: ./services/frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - case_service
+
+volumes:
+  postgres_data:
+
