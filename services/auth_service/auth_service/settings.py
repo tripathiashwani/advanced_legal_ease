@@ -142,16 +142,51 @@ REST_FRAMEWORK = {
 }
 
 
+# SPECTACULAR_SETTINGS = {
+#     "TITLE": "eCourt API",
+#     "DESCRIPTION": "API for managing court cases, users, and legal documents.",
+#     "VERSION": "1.0.0",
+#     "SCHEMA_PATH_PREFIX": r"/api/v[0-9]",
+# }
+
+# settings.py
+
 SPECTACULAR_SETTINGS = {
-    "TITLE": "eCourt API",
-    "DESCRIPTION": "API for managing court cases, users, and legal documents.",
-    "VERSION": "1.0.0",
-    "SCHEMA_PATH_PREFIX": r"/api/v[0-9]",
+    'TITLE': 'DRF Spectacular API',
+    'DESCRIPTION': 'API documentation',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
+
+    'COMPONENT_SPLIT_REQUEST': True,
+
+    'SWAGGER_UI_SETTINGS': {
+        'deepLinking': True,
+        'defaultModelsExpandDepth': -1,
+        'defaultModelExpandDepth': 3,
+        'defaultModelRendering': 'example',
+        'displayRequestDuration': True,
+        'filter': True,
+        'persistAuthorization': True,  # keeps token saved while browsing
+    },
+
+    'SECURITY': [
+        {'BearerAuth': []},  #  tells Swagger to use Bearer auth
+    ],
+
+    'COMPONENTS': {
+        'securitySchemes': {
+            'BearerAuth': {
+                'type': 'http',
+                'scheme': 'bearer',
+                'bearerFormat': 'JWT',
+            }
+        }
+    },
 }
 
 
-# JWT token lifetimes
-ACCESS_TOKEN_LIFETIME = 5  # minutes
+
+ACCESS_TOKEN_LIFETIME = 59  # minutes
 REFRESH_TOKEN_LIFETIME = 1  # days
 
 SIMPLE_JWT = {

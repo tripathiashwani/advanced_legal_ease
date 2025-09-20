@@ -1,9 +1,11 @@
 # accounts/views.py
-from .serializers import SignupSerializer,LoginSerializer
+from .models import User, UserProfile
+from .serializers import SignupSerializer,LoginSerializer, UserProfileSerializer
 # from .kafka_producer import produce_event
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework import generics
 from rest_framework_simplejwt.views import TokenObtainPairView
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 class SignupView(generics.CreateAPIView):
     serializer_class = SignupSerializer
@@ -25,7 +27,7 @@ class LoginView(TokenObtainPairView):
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        user = serializer.user  # safe because .validate() sets it
+        user = serializer.user  
 
         response = super().post(request, *args, **kwargs)
 
@@ -36,3 +38,15 @@ class LoginView(TokenObtainPairView):
         # )
 
         return response
+
+
+
+class ProfileView(generics.RetrieveUpdateAPIView):
+    serializer_class = UserProfileSerializer
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
+
+    def get_object(self):
+        
+        profile, _ = UserProfile.objects.get_or_create(user=self.request.user)
+        return profile
