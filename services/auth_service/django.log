@@ -1,0 +1,116 @@
+INFO 2025-10-04 23:59:27,427 kafka_producer 3348 2712 Kafka producer initialized successfully
+INFO 2025-10-04 23:59:41,875 kafka_producer 9196 8232 Initializing Kafka producer. Enabled: True
+INFO 2025-10-04 23:59:41,875 kafka_producer 9196 8232 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-04 23:59:41,875 kafka_producer 9196 8232 Kafka producer initialized successfully
+INFO 2025-10-04 23:59:56,189 kafka_producer 9136 16200 Initializing Kafka producer. Enabled: True
+INFO 2025-10-04 23:59:56,189 kafka_producer 9136 16200 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-04 23:59:56,189 kafka_producer 9136 16200 Kafka producer initialized successfully
+INFO 2025-10-05 00:00:33,835 api 9136 20312 User use4r@example.com created successfully. Attempting to publish Kafka event...
+DEBUG 2025-10-05 00:00:33,836 kafka_producer 9136 20312 send_message called with topic: user_signed_up, enabled: True, producer: True
+DEBUG 2025-10-05 00:00:33,836 kafka_producer 9136 20312 Attempting to send message to topic user_signed_up
+DEBUG 2025-10-05 00:00:33,838 kafka_producer 9136 20312 Sending message data: {'user_id': '8', 'email': 'use4r@example.com', 'username': 'test4', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-04T18:30:33.823698+00:00'}
+DEBUG 2025-10-05 00:00:33,839 kafka_producer 9136 20312 Message sent, flushing...
+INFO 2025-10-05 00:00:33,864 kafka_producer 9136 20312 Successfully sent message to user_signed_up: {'user_id': '8', 'email': 'use4r@example.com', 'username': 'test4', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-04T18:30:33.823698+00:00'}
+INFO 2025-10-05 00:00:33,865 api 9136 20312 Kafka produce_event returned: True
+INFO 2025-10-05 00:00:33,865 api 9136 20312 User signup event published for user use4r@example.com
+INFO 2025-10-05 00:00:48,588 kafka_producer 17496 1328 Initializing Kafka producer. Enabled: True
+INFO 2025-10-05 00:00:48,588 kafka_producer 17496 1328 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-05 00:00:48,591 kafka_producer 17496 1328 Kafka producer initialized successfully
+INFO 2025-10-05 00:01:26,986 kafka_producer 480 8752 Initializing Kafka producer. Enabled: True
+INFO 2025-10-05 00:01:26,986 kafka_producer 480 8752 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-05 00:01:26,986 kafka_producer 480 8752 Kafka producer initialized successfully
+INFO 2025-10-05 00:01:29,641 kafka_producer 9348 7932 Initializing Kafka producer. Enabled: True
+INFO 2025-10-05 00:01:29,641 kafka_producer 9348 7932 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-05 00:01:29,641 kafka_producer 9348 7932 Kafka producer initialized successfully
+INFO 2025-10-05 00:01:34,470 kafka_producer 13136 17584 Initializing Kafka producer. Enabled: True
+INFO 2025-10-05 00:01:34,470 kafka_producer 13136 17584 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-05 00:01:34,470 kafka_producer 13136 17584 Kafka producer initialized successfully
+INFO 2025-10-05 00:03:24,996 api 13136 17588 User use5r@example.com created successfully. Attempting to publish Kafka event...
+DEBUG 2025-10-05 00:03:24,996 kafka_producer 13136 17588 send_message called with topic: user_signed_up, enabled: True, producer: True
+DEBUG 2025-10-05 00:03:24,997 kafka_producer 13136 17588 Attempting to send message to topic user_signed_up
+DEBUG 2025-10-05 00:03:24,997 kafka_producer 13136 17588 Sending message data: {'user_id': '9', 'email': 'use5r@example.com', 'username': 'string5', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-04T18:33:24.985768+00:00'}
+DEBUG 2025-10-05 00:03:25,001 kafka_producer 13136 17588 Message sent, flushing...
+INFO 2025-10-05 00:03:25,016 kafka_producer 13136 17588 Successfully sent message to user_signed_up: {'user_id': '9', 'email': 'use5r@example.com', 'username': 'string5', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-04T18:33:24.985768+00:00'}
+INFO 2025-10-05 00:03:25,018 api 13136 17588 Kafka produce_event returned: True
+INFO 2025-10-05 00:03:25,019 api 13136 17588 User signup event published for user use5r@example.com
+INFO 2025-10-05 00:11:24,433 kafka_producer 18924 10256 Initializing Kafka producer. Enabled: True
+INFO 2025-10-05 00:11:24,433 kafka_producer 18924 10256 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-05 00:11:24,436 kafka_producer 18924 10256 Kafka producer initialized successfully
+INFO 2025-10-05 00:28:37,285 api 18924 12508 User tashwani475@gmail.com created successfully. Attempting to publish Kafka event...
+DEBUG 2025-10-05 00:28:37,285 kafka_producer 18924 12508 send_message called with topic: user_signed_up, enabled: True, producer: True
+DEBUG 2025-10-05 00:28:37,285 kafka_producer 18924 12508 Attempting to send message to topic user_signed_up
+DEBUG 2025-10-05 00:28:37,285 kafka_producer 18924 12508 Sending message data: {'user_id': '10', 'email': 'tashwani475@gmail.com', 'username': 'test5', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-04T18:58:37.275275+00:00'}
+DEBUG 2025-10-05 00:28:37,290 kafka_producer 18924 12508 Message sent, flushing...
+INFO 2025-10-05 00:28:37,301 kafka_producer 18924 12508 Successfully sent message to user_signed_up: {'user_id': '10', 'email': 'tashwani475@gmail.com', 'username': 'test5', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-04T18:58:37.275275+00:00'}
+INFO 2025-10-05 00:28:37,307 api 18924 12508 Kafka produce_event returned: True
+INFO 2025-10-05 00:28:37,308 api 18924 12508 User signup event published for user tashwani475@gmail.com
+INFO 2025-10-05 00:34:03,548 api 18924 7364 User tashwani475@gmail.com created successfully. Attempting to publish Kafka event...
+DEBUG 2025-10-05 00:34:03,549 kafka_producer 18924 7364 send_message called with topic: user_signed_up, enabled: True, producer: True
+DEBUG 2025-10-05 00:34:03,550 kafka_producer 18924 7364 Attempting to send message to topic user_signed_up
+DEBUG 2025-10-05 00:34:03,550 kafka_producer 18924 7364 Sending message data: {'user_id': '11', 'email': 'tashwani475@gmail.com', 'username': 'test5', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-04T19:04:03.518270+00:00'}
+DEBUG 2025-10-05 00:34:03,550 kafka_producer 18924 7364 Message sent, flushing...
+INFO 2025-10-05 00:34:03,556 kafka_producer 18924 7364 Successfully sent message to user_signed_up: {'user_id': '11', 'email': 'tashwani475@gmail.com', 'username': 'test5', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-04T19:04:03.518270+00:00'}
+INFO 2025-10-05 00:34:03,558 api 18924 7364 Kafka produce_event returned: True
+INFO 2025-10-05 00:34:03,559 api 18924 7364 User signup event published for user tashwani475@gmail.com
+INFO 2025-10-05 00:37:33,618 api 18924 17896 User tashwani475@gmail.com created successfully. Attempting to publish Kafka event...
+DEBUG 2025-10-05 00:37:33,621 kafka_producer 18924 17896 send_message called with topic: user_signed_up, enabled: True, producer: True
+DEBUG 2025-10-05 00:37:33,622 kafka_producer 18924 17896 Attempting to send message to topic user_signed_up
+DEBUG 2025-10-05 00:37:33,623 kafka_producer 18924 17896 Sending message data: {'user_id': '12', 'email': 'tashwani475@gmail.com', 'username': 'test5', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-04T19:07:33.605420+00:00'}
+DEBUG 2025-10-05 00:37:33,625 kafka_producer 18924 17896 Message sent, flushing...
+INFO 2025-10-05 00:37:33,630 kafka_producer 18924 17896 Successfully sent message to user_signed_up: {'user_id': '12', 'email': 'tashwani475@gmail.com', 'username': 'test5', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-04T19:07:33.605420+00:00'}
+INFO 2025-10-05 00:37:33,631 api 18924 17896 Kafka produce_event returned: True
+INFO 2025-10-05 00:37:33,632 api 18924 17896 User signup event published for user tashwani475@gmail.com
+INFO 2025-10-05 11:24:49,985 kafka_producer 14560 4080 Initializing Kafka producer. Enabled: True
+INFO 2025-10-05 11:24:49,985 kafka_producer 14560 4080 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-05 11:24:49,985 kafka_producer 14560 4080 Kafka producer initialized successfully
+INFO 2025-10-05 11:34:08,253 kafka_producer 4896 13992 Initializing Kafka producer. Enabled: True
+INFO 2025-10-05 11:34:08,253 kafka_producer 4896 13992 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-05 11:34:08,253 kafka_producer 4896 13992 Kafka producer initialized successfully
+INFO 2025-10-05 11:35:55,165 api 14560 10052 User tashwani475@gmail.com created successfully. Attempting to publish Kafka event...
+DEBUG 2025-10-05 11:35:55,167 kafka_producer 14560 10052 send_message called with topic: user_signed_up, enabled: True, producer: True
+DEBUG 2025-10-05 11:35:55,167 kafka_producer 14560 10052 Attempting to send message to topic user_signed_up
+DEBUG 2025-10-05 11:35:55,167 kafka_producer 14560 10052 Sending message data: {'user_id': '13', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:05:55.149092+00:00'}
+DEBUG 2025-10-05 11:35:55,304 kafka_producer 14560 10052 Message sent, flushing...
+INFO 2025-10-05 11:35:55,441 kafka_producer 14560 10052 Successfully sent message to user_signed_up: {'user_id': '13', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:05:55.149092+00:00'}
+INFO 2025-10-05 11:35:55,442 api 14560 10052 Kafka produce_event returned: True
+INFO 2025-10-05 11:35:55,442 api 14560 10052 User signup event published for user tashwani475@gmail.com
+INFO 2025-10-05 11:40:42,826 api 14560 15096 User tashwani475@gmail.com created successfully. Attempting to publish Kafka event...
+DEBUG 2025-10-05 11:40:42,826 kafka_producer 14560 15096 send_message called with topic: user_signed_up, enabled: True, producer: True
+DEBUG 2025-10-05 11:40:42,827 kafka_producer 14560 15096 Attempting to send message to topic user_signed_up
+DEBUG 2025-10-05 11:40:42,828 kafka_producer 14560 15096 Sending message data: {'user_id': '14', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:10:42.811113+00:00'}
+DEBUG 2025-10-05 11:40:42,830 kafka_producer 14560 15096 Message sent, flushing...
+INFO 2025-10-05 11:40:42,834 kafka_producer 14560 15096 Successfully sent message to user_signed_up: {'user_id': '14', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:10:42.811113+00:00'}
+INFO 2025-10-05 11:40:42,836 api 14560 15096 Kafka produce_event returned: True
+INFO 2025-10-05 11:40:42,836 api 14560 15096 User signup event published for user tashwani475@gmail.com
+INFO 2025-10-05 11:44:15,715 api 14560 10328 User tashwani475@gmail.com created successfully. Attempting to publish Kafka event...
+DEBUG 2025-10-05 11:44:15,716 kafka_producer 14560 10328 send_message called with topic: user_signed_up, enabled: True, producer: True
+DEBUG 2025-10-05 11:44:15,720 kafka_producer 14560 10328 Attempting to send message to topic user_signed_up
+DEBUG 2025-10-05 11:44:15,721 kafka_producer 14560 10328 Sending message data: {'user_id': '15', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:14:15.705964+00:00'}
+DEBUG 2025-10-05 11:44:15,722 kafka_producer 14560 10328 Message sent, flushing...
+INFO 2025-10-05 11:44:15,725 kafka_producer 14560 10328 Successfully sent message to user_signed_up: {'user_id': '15', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:14:15.705964+00:00'}
+INFO 2025-10-05 11:44:15,726 api 14560 10328 Kafka produce_event returned: True
+INFO 2025-10-05 11:44:15,727 api 14560 10328 User signup event published for user tashwani475@gmail.com
+INFO 2025-10-05 11:48:01,341 api 14560 7904 User tashwani475@gmail.com created successfully. Attempting to publish Kafka event...
+DEBUG 2025-10-05 11:48:01,342 kafka_producer 14560 7904 send_message called with topic: user_signed_up, enabled: True, producer: True
+DEBUG 2025-10-05 11:48:01,344 kafka_producer 14560 7904 Attempting to send message to topic user_signed_up
+DEBUG 2025-10-05 11:48:01,344 kafka_producer 14560 7904 Sending message data: {'user_id': '16', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:18:01.330892+00:00'}
+DEBUG 2025-10-05 11:48:01,345 kafka_producer 14560 7904 Message sent, flushing...
+INFO 2025-10-05 11:48:01,349 kafka_producer 14560 7904 Successfully sent message to user_signed_up: {'user_id': '16', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:18:01.330892+00:00'}
+INFO 2025-10-05 11:48:01,354 api 14560 7904 Kafka produce_event returned: True
+INFO 2025-10-05 11:48:01,358 api 14560 7904 User signup event published for user tashwani475@gmail.com
+INFO 2025-10-05 12:09:44,826 api 14560 7472 User tashwani475@gmail.com created successfully. Attempting to publish Kafka event...
+DEBUG 2025-10-05 12:09:44,828 kafka_producer 14560 7472 send_message called with topic: user_signed_up, enabled: True, producer: True
+DEBUG 2025-10-05 12:09:44,828 kafka_producer 14560 7472 Attempting to send message to topic user_signed_up
+DEBUG 2025-10-05 12:09:44,828 kafka_producer 14560 7472 Sending message data: {'user_id': '17', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:39:44.808832+00:00'}
+DEBUG 2025-10-05 12:09:44,830 kafka_producer 14560 7472 Message sent, flushing...
+INFO 2025-10-05 12:09:44,835 kafka_producer 14560 7472 Successfully sent message to user_signed_up: {'user_id': '17', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:39:44.808832+00:00'}
+INFO 2025-10-05 12:09:44,842 api 14560 7472 Kafka produce_event returned: True
+INFO 2025-10-05 12:09:44,844 api 14560 7472 User signup event published for user tashwani475@gmail.com
+INFO 2025-10-05 12:10:58,459 api 14560 17456 User tashwani475@gmail.com created successfully. Attempting to publish Kafka event...
+DEBUG 2025-10-05 12:10:58,460 kafka_producer 14560 17456 send_message called with topic: user_signed_up, enabled: True, producer: True
+DEBUG 2025-10-05 12:10:58,464 kafka_producer 14560 17456 Attempting to send message to topic user_signed_up
+DEBUG 2025-10-05 12:10:58,465 kafka_producer 14560 17456 Sending message data: {'user_id': '18', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:40:58.450064+00:00'}
+DEBUG 2025-10-05 12:10:58,465 kafka_producer 14560 17456 Message sent, flushing...
+INFO 2025-10-05 12:10:58,469 kafka_producer 14560 17456 Successfully sent message to user_signed_up: {'user_id': '18', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:40:58.450064+00:00'}
+INFO 2025-10-05 12:10:58,470 api 14560 17456 Kafka produce_event returned: True
+INFO 2025-10-05 12:10:58,471 api 14560 17456 User signup event published for user tashwani475@gmail.com

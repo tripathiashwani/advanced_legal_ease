@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'notification_app',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +121,60 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email Settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'tashwani475@gmail.com'  # Add your email
+EMAIL_HOST_PASSWORD = ''  # Add your email password or app password
+DEFAULT_FROM_EMAIL = 'tashwani475@gmail.com'  # Add your from email
+
+# For development, you can use console backend
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Kafka Settings
+KAFKA_BOOTSTRAP_SERVERS = 'localhost:9092'
+KAFKA_CONSUMER_GROUP = 'notification_service'
+
+# Platform Settings
+FRONTEND_BASE_URL = 'http://localhost:3000'
+FRONTEND_LOGIN_URL = 'http://localhost:3000/login'
+SUPPORT_EMAIL = 'support@legalease.com'
+
+# Logging Configuration
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.FileHandler',
+            'filename': BASE_DIR / 'notification_service.log',
+            'formatter': 'verbose',
+        },
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple',
+        },
+    },
+    'loggers': {
+        'notification_app': {
+            'handlers': ['file', 'console'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}

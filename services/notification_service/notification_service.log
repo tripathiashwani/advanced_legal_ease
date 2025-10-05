@@ -1,0 +1,158 @@
+INFO 2025-10-05 00:17:12,188 kafka_consumer 18696 18376 Starting Kafka consumer for topics: ['user_signed_up', 'user_verified', 'user_logged_in', 'password_reset_requested', 'hearing_scheduled', 'case_updated', 'document_shared', 'payment_completed']
+ERROR 2025-10-05 00:17:16,275 kafka_consumer 18696 18376 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: case_updated: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 00:17:16,278 kafka_consumer 18696 18376 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: document_shared: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 00:17:16,279 kafka_consumer 18696 18376 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: hearing_scheduled: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 00:17:16,279 kafka_consumer 18696 18376 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: password_reset_requested: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 00:17:16,280 kafka_consumer 18696 18376 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: payment_completed: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 00:17:16,280 kafka_consumer 18696 18376 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: user_verified: Broker: Unknown topic or partition"}
+INFO 2025-10-05 00:17:16,813 kafka_consumer 18696 18376 Received message from topic 'user_signed_up': {"user_id": "6", "email": "user@example.com", "username": "test2", "user_type": "PETITIONER", "is_verified": false, "created_at": "2025-10-04T18:12:56.766418+00:00"}
+INFO 2025-10-05 00:17:16,814 kafka_consumer 18696 18376 Handling user signup event: {'user_id': '{"user_id": "6"', 'email': ' "email": "user@example.com"', 'additional_data': [' "username": "test2"', ' "user_type": "PETITIONER"', ' "is_verified": false', ' "created_at": "2025-10-04T18:12:56.766418+00:00"}']}
+INFO 2025-10-05 00:17:16,815 kafka_consumer 18696 18376 Processing user signup for  "email": "user@example.com" (ID: {"user_id": "6")
+ERROR 2025-10-05 00:17:16,816 utils 18696 18376 Failed to send welcome notification: ['“{"user_id": "6"” is not a valid UUID.']
+ERROR 2025-10-05 00:17:16,817 kafka_consumer 18696 18376 Failed to send welcome notification to  "email": "user@example.com": Failed to send welcome notification: ['“{"user_id": "6"” is not a valid UUID.']
+INFO 2025-10-05 00:17:16,817 kafka_consumer 18696 18376 Received message from topic 'user_signed_up': {"user_id": "7", "email": "user3@example.com", "username": "test3", "user_type": "PETITIONER", "is_verified": false, "created_at": "2025-10-04T18:27:21.188758+00:00"}
+INFO 2025-10-05 00:17:16,818 kafka_consumer 18696 18376 Handling user signup event: {'user_id': '{"user_id": "7"', 'email': ' "email": "user3@example.com"', 'additional_data': [' "username": "test3"', ' "user_type": "PETITIONER"', ' "is_verified": false', ' "created_at": "2025-10-04T18:27:21.188758+00:00"}']}
+INFO 2025-10-05 00:17:16,819 kafka_consumer 18696 18376 Processing user signup for  "email": "user3@example.com" (ID: {"user_id": "7")
+ERROR 2025-10-05 00:17:16,819 utils 18696 18376 Failed to send welcome notification: ['“{"user_id": "7"” is not a valid UUID.']
+ERROR 2025-10-05 00:17:16,820 kafka_consumer 18696 18376 Failed to send welcome notification to  "email": "user3@example.com": Failed to send welcome notification: ['“{"user_id": "7"” is not a valid UUID.']
+INFO 2025-10-05 00:17:16,821 kafka_consumer 18696 18376 Received message from topic 'user_signed_up': {"user_id": "8", "email": "use4r@example.com", "username": "test4", "user_type": "PETITIONER", "is_verified": false, "created_at": "2025-10-04T18:30:33.823698+00:00"}
+INFO 2025-10-05 00:17:16,821 kafka_consumer 18696 18376 Handling user signup event: {'user_id': '{"user_id": "8"', 'email': ' "email": "use4r@example.com"', 'additional_data': [' "username": "test4"', ' "user_type": "PETITIONER"', ' "is_verified": false', ' "created_at": "2025-10-04T18:30:33.823698+00:00"}']}
+INFO 2025-10-05 00:17:16,822 kafka_consumer 18696 18376 Processing user signup for  "email": "use4r@example.com" (ID: {"user_id": "8")
+ERROR 2025-10-05 00:17:16,823 utils 18696 18376 Failed to send welcome notification: ['“{"user_id": "8"” is not a valid UUID.']
+ERROR 2025-10-05 00:17:16,823 kafka_consumer 18696 18376 Failed to send welcome notification to  "email": "use4r@example.com": Failed to send welcome notification: ['“{"user_id": "8"” is not a valid UUID.']
+INFO 2025-10-05 00:17:16,824 kafka_consumer 18696 18376 Received message from topic 'user_signed_up': {"user_id": "9", "email": "use5r@example.com", "username": "string5", "user_type": "PETITIONER", "is_verified": false, "created_at": "2025-10-04T18:33:24.985768+00:00"}
+INFO 2025-10-05 00:17:16,824 kafka_consumer 18696 18376 Handling user signup event: {'user_id': '{"user_id": "9"', 'email': ' "email": "use5r@example.com"', 'additional_data': [' "username": "string5"', ' "user_type": "PETITIONER"', ' "is_verified": false', ' "created_at": "2025-10-04T18:33:24.985768+00:00"}']}
+INFO 2025-10-05 00:17:16,824 kafka_consumer 18696 18376 Processing user signup for  "email": "use5r@example.com" (ID: {"user_id": "9")
+ERROR 2025-10-05 00:17:16,825 utils 18696 18376 Failed to send welcome notification: ['“{"user_id": "9"” is not a valid UUID.']
+ERROR 2025-10-05 00:17:16,825 kafka_consumer 18696 18376 Failed to send welcome notification to  "email": "use5r@example.com": Failed to send welcome notification: ['“{"user_id": "9"” is not a valid UUID.']
+INFO 2025-10-05 00:17:16,827 kafka_consumer 18696 18376 Received message from topic 'user_logged_in': {"user_id": "5", "email": "admin2@gmail.com", "username": "admin2", "user_type": "OBSERVER", "login_time": "2025-10-04T18:07:04.456123+00:00"}
+INFO 2025-10-05 00:17:16,828 kafka_consumer 18696 18376 User  "email": "admin2@gmail.com" logged in
+INFO 2025-10-05 00:28:37,315 kafka_consumer 18696 18376 Received message from topic 'user_signed_up': {"user_id": "10", "email": "tashwani475@gmail.com", "username": "test5", "user_type": "PETITIONER", "is_verified": false, "created_at": "2025-10-04T18:58:37.275275+00:00"}
+INFO 2025-10-05 00:28:37,316 kafka_consumer 18696 18376 Handling user signup event: {'user_id': '{"user_id": "10"', 'email': ' "email": "tashwani475@gmail.com"', 'additional_data': [' "username": "test5"', ' "user_type": "PETITIONER"', ' "is_verified": false', ' "created_at": "2025-10-04T18:58:37.275275+00:00"}']}
+INFO 2025-10-05 00:28:37,318 kafka_consumer 18696 18376 Processing user signup for  "email": "tashwani475@gmail.com" (ID: {"user_id": "10")
+ERROR 2025-10-05 00:28:37,324 utils 18696 18376 Failed to send welcome notification: ['“{"user_id": "10"” is not a valid UUID.']
+ERROR 2025-10-05 00:28:37,325 kafka_consumer 18696 18376 Failed to send welcome notification to  "email": "tashwani475@gmail.com": Failed to send welcome notification: ['“{"user_id": "10"” is not a valid UUID.']
+INFO 2025-10-05 00:34:03,556 kafka_consumer 18696 18376 Received message from topic 'user_signed_up': {"user_id": "11", "email": "tashwani475@gmail.com", "username": "test5", "user_type": "PETITIONER", "is_verified": false, "created_at": "2025-10-04T19:04:03.518270+00:00"}
+INFO 2025-10-05 00:34:03,559 kafka_consumer 18696 18376 Handling user signup event: {'user_id': '{"user_id": "11"', 'email': ' "email": "tashwani475@gmail.com"', 'additional_data': [' "username": "test5"', ' "user_type": "PETITIONER"', ' "is_verified": false', ' "created_at": "2025-10-04T19:04:03.518270+00:00"}']}
+INFO 2025-10-05 00:34:03,560 kafka_consumer 18696 18376 Processing user signup for  "email": "tashwani475@gmail.com" (ID: {"user_id": "11")
+ERROR 2025-10-05 00:34:03,571 utils 18696 18376 Failed to send welcome notification: ['“{"user_id": "11"” is not a valid UUID.']
+ERROR 2025-10-05 00:34:03,586 kafka_consumer 18696 18376 Failed to send welcome notification to  "email": "tashwani475@gmail.com": Failed to send welcome notification: ['“{"user_id": "11"” is not a valid UUID.']
+INFO 2025-10-05 00:37:33,633 kafka_consumer 18696 18376 Received message from topic 'user_signed_up': {"user_id": "12", "email": "tashwani475@gmail.com", "username": "test5", "user_type": "PETITIONER", "is_verified": false, "created_at": "2025-10-04T19:07:33.605420+00:00"}
+INFO 2025-10-05 00:37:33,644 kafka_consumer 18696 18376 Handling user signup event: {'user_id': '{"user_id": "12"', 'email': ' "email": "tashwani475@gmail.com"', 'additional_data': [' "username": "test5"', ' "user_type": "PETITIONER"', ' "is_verified": false', ' "created_at": "2025-10-04T19:07:33.605420+00:00"}']}
+INFO 2025-10-05 00:37:33,646 kafka_consumer 18696 18376 Processing user signup for  "email": "tashwani475@gmail.com" (ID: {"user_id": "12")
+ERROR 2025-10-05 00:37:33,648 utils 18696 18376 Failed to send welcome notification: ['“{"user_id": "12"” is not a valid UUID.']
+ERROR 2025-10-05 00:37:33,648 kafka_consumer 18696 18376 Failed to send welcome notification to  "email": "tashwani475@gmail.com": Failed to send welcome notification: ['“{"user_id": "12"” is not a valid UUID.']
+INFO 2025-10-05 00:37:48,788 kafka_consumer 18696 18376 Consumer interrupted by user
+INFO 2025-10-05 00:37:48,920 kafka_consumer 18696 18376 Kafka consumer closed
+INFO 2025-10-05 00:37:52,933 kafka_consumer 9180 3504 Starting Kafka consumer for topics: ['user_signed_up', 'user_verified', 'user_logged_in', 'password_reset_requested', 'hearing_scheduled', 'case_updated', 'document_shared', 'payment_completed']
+ERROR 2025-10-05 00:37:52,992 kafka_consumer 9180 3504 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: case_updated: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 00:37:52,993 kafka_consumer 9180 3504 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: document_shared: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 00:37:52,993 kafka_consumer 9180 3504 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: hearing_scheduled: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 00:37:52,994 kafka_consumer 9180 3504 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: password_reset_requested: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 00:37:52,994 kafka_consumer 9180 3504 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: payment_completed: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 00:37:52,995 kafka_consumer 9180 3504 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: user_verified: Broker: Unknown topic or partition"}
+INFO 2025-10-05 00:39:53,152 kafka_consumer 9180 3504 Consumer interrupted by user
+INFO 2025-10-05 00:39:53,158 kafka_consumer 9180 3504 Kafka consumer closed
+INFO 2025-10-05 00:43:30,701 kafka_consumer 20356 12956 Starting Kafka consumer for topics: ['user_signed_up', 'user_verified', 'user_logged_in', 'password_reset_requested', 'hearing_scheduled', 'case_updated', 'document_shared', 'payment_completed']
+ERROR 2025-10-05 00:43:30,754 kafka_consumer 20356 12956 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: document_shared: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 00:43:30,754 kafka_consumer 20356 12956 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: payment_completed: Broker: Unknown topic or partition"}
+INFO 2025-10-05 11:32:26,014 kafka_consumer 20932 16456 Starting Kafka consumer for topics: ['user_signed_up', 'user_verified', 'user_logged_in', 'password_reset_requested', 'hearing_scheduled', 'case_updated', 'document_shared', 'payment_completed']
+ERROR 2025-10-05 11:32:28,053 kafka_consumer 20932 16456 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: case_updated: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:32:28,054 kafka_consumer 20932 16456 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: document_shared: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:32:28,054 kafka_consumer 20932 16456 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: hearing_scheduled: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:32:28,054 kafka_consumer 20932 16456 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: password_reset_requested: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:32:28,055 kafka_consumer 20932 16456 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: payment_completed: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:32:28,055 kafka_consumer 20932 16456 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: user_logged_in: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:32:28,056 kafka_consumer 20932 16456 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: user_signed_up: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:32:28,056 kafka_consumer 20932 16456 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: user_verified: Broker: Unknown topic or partition"}
+INFO 2025-10-05 11:35:56,330 kafka_consumer 20932 16456 Received message from topic 'user_signed_up': {"user_id": "13", "email": "tashwani475@gmail.com", "username": "string6", "user_type": "PETITIONER", "is_verified": false, "created_at": "2025-10-05T06:05:55.149092+00:00"}
+INFO 2025-10-05 11:35:56,330 kafka_consumer 20932 16456 Handling user signup event: {'user_id': '{"user_id": "13"', 'email': ' "email": "tashwani475@gmail.com"', 'additional_data': [' "username": "string6"', ' "user_type": "PETITIONER"', ' "is_verified": false', ' "created_at": "2025-10-05T06:05:55.149092+00:00"}']}
+INFO 2025-10-05 11:35:56,331 kafka_consumer 20932 16456 Processing user signup for  "email": "tashwani475@gmail.com" (ID: {"user_id": "13")
+ERROR 2025-10-05 11:35:59,062 utils 20932 16456 Failed to send email to  "email": "tashwani475@gmail.com": Invalid address ""
+ERROR 2025-10-05 11:35:59,073 kafka_consumer 20932 16456 Failed to send welcome notification to  "email": "tashwani475@gmail.com": Email sending failed: Invalid address ""
+INFO 2025-10-05 11:40:01,282 kafka_consumer 20932 16456 Consumer interrupted by user
+INFO 2025-10-05 11:40:01,301 kafka_consumer 20932 16456 Kafka consumer closed
+INFO 2025-10-05 11:40:17,993 kafka_consumer 2980 13360 Starting Kafka consumer for topics: ['user_signed_up', 'user_verified', 'user_logged_in', 'password_reset_requested', 'hearing_scheduled', 'case_updated', 'document_shared', 'payment_completed']
+ERROR 2025-10-05 11:40:18,028 kafka_consumer 2980 13360 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: case_updated: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:40:18,029 kafka_consumer 2980 13360 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: document_shared: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:40:18,031 kafka_consumer 2980 13360 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: hearing_scheduled: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:40:18,034 kafka_consumer 2980 13360 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: password_reset_requested: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:40:18,036 kafka_consumer 2980 13360 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: payment_completed: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:40:18,037 kafka_consumer 2980 13360 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: user_logged_in: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:40:18,038 kafka_consumer 2980 13360 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: user_verified: Broker: Unknown topic or partition"}
+INFO 2025-10-05 11:40:42,836 kafka_consumer 2980 13360 Received message from topic 'user_signed_up': {"user_id": "14", "email": "tashwani475@gmail.com", "username": "string6", "user_type": "PETITIONER", "is_verified": false, "created_at": "2025-10-05T06:10:42.811113+00:00"}
+INFO 2025-10-05 11:40:42,840 kafka_consumer 2980 13360 Successfully parsed JSON message: {'user_id': '14', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:10:42.811113+00:00'}
+INFO 2025-10-05 11:40:42,843 kafka_consumer 2980 13360 Handling user signup event: {'user_id': '14', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:10:42.811113+00:00'}
+INFO 2025-10-05 11:40:42,848 kafka_consumer 2980 13360 Processing user signup for tashwani475@gmail.com (ID: 14)
+ERROR 2025-10-05 11:40:45,880 utils 2980 13360 Failed to send email to tashwani475@gmail.com: Invalid address ""
+ERROR 2025-10-05 11:40:45,932 kafka_consumer 2980 13360 Failed to send welcome notification to {'user_id': '14', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:10:42.811113+00:00'}: Email sending failed: Invalid address ""
+INFO 2025-10-05 11:43:26,427 kafka_consumer 2980 13360 Consumer interrupted by user
+INFO 2025-10-05 11:43:26,435 kafka_consumer 2980 13360 Kafka consumer closed
+INFO 2025-10-05 11:43:29,412 kafka_consumer 15512 12792 Starting Kafka consumer for topics: ['user_signed_up', 'user_verified', 'user_logged_in', 'password_reset_requested', 'hearing_scheduled', 'case_updated', 'document_shared', 'payment_completed']
+ERROR 2025-10-05 11:43:29,437 kafka_consumer 15512 12792 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: case_updated: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:43:29,442 kafka_consumer 15512 12792 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: document_shared: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:43:29,443 kafka_consumer 15512 12792 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: hearing_scheduled: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:43:29,444 kafka_consumer 15512 12792 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: password_reset_requested: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:43:29,445 kafka_consumer 15512 12792 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: payment_completed: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:43:29,446 kafka_consumer 15512 12792 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: user_logged_in: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:43:29,448 kafka_consumer 15512 12792 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: user_verified: Broker: Unknown topic or partition"}
+INFO 2025-10-05 11:44:15,726 kafka_consumer 15512 12792 Received message from topic 'user_signed_up': {"user_id": "15", "email": "tashwani475@gmail.com", "username": "string6", "user_type": "PETITIONER", "is_verified": false, "created_at": "2025-10-05T06:14:15.705964+00:00"}
+INFO 2025-10-05 11:44:15,727 kafka_consumer 15512 12792 Successfully parsed JSON message: {'user_id': '15', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:14:15.705964+00:00'}
+INFO 2025-10-05 11:44:15,729 kafka_consumer 15512 12792 Handling user signup event: {'user_id': '15', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:14:15.705964+00:00'}
+INFO 2025-10-05 11:44:15,730 kafka_consumer 15512 12792 Processing user signup for tashwani475@gmail.com (ID: 15)
+INFO 2025-10-05 11:44:15,777 utils 15512 12792 About to send email to: 'tashwani475@gmail.com' with subject: 'Welcome to Legal Ease, string6!'
+INFO 2025-10-05 11:44:15,778 utils 15512 12792 EmailService.send_email called with to_email: 'tashwani475@gmail.com', subject: 'Welcome to Legal Ease, string6!'
+ERROR 2025-10-05 11:44:18,360 utils 15512 12792 Failed to send email to tashwani475@gmail.com: Invalid address ""
+ERROR 2025-10-05 11:44:18,370 kafka_consumer 15512 12792 Failed to send welcome notification to {'user_id': '15', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:14:15.705964+00:00'}: Email sending failed: Invalid address ""
+INFO 2025-10-05 11:47:34,064 kafka_consumer 15512 12792 Consumer interrupted by user
+INFO 2025-10-05 11:47:34,080 kafka_consumer 15512 12792 Kafka consumer closed
+INFO 2025-10-05 11:47:36,661 kafka_consumer 21024 20952 Starting Kafka consumer for topics: ['user_signed_up', 'user_verified', 'user_logged_in', 'password_reset_requested', 'hearing_scheduled', 'case_updated', 'document_shared', 'payment_completed']
+ERROR 2025-10-05 11:47:36,675 kafka_consumer 21024 20952 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: case_updated: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:47:36,675 kafka_consumer 21024 20952 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: document_shared: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:47:36,676 kafka_consumer 21024 20952 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: hearing_scheduled: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:47:36,677 kafka_consumer 21024 20952 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: password_reset_requested: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:47:36,678 kafka_consumer 21024 20952 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: payment_completed: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:47:36,678 kafka_consumer 21024 20952 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: user_logged_in: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 11:47:36,679 kafka_consumer 21024 20952 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: user_verified: Broker: Unknown topic or partition"}
+INFO 2025-10-05 11:48:01,357 kafka_consumer 21024 20952 Received message from topic 'user_signed_up': {"user_id": "16", "email": "tashwani475@gmail.com", "username": "string6", "user_type": "PETITIONER", "is_verified": false, "created_at": "2025-10-05T06:18:01.330892+00:00"}
+INFO 2025-10-05 11:48:01,362 kafka_consumer 21024 20952 Successfully parsed JSON message: {'user_id': '16', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:18:01.330892+00:00'}
+INFO 2025-10-05 11:48:01,382 kafka_consumer 21024 20952 Handling user signup event: {'user_id': '16', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:18:01.330892+00:00'}
+INFO 2025-10-05 11:48:01,384 kafka_consumer 21024 20952 Processing user signup for tashwani475@gmail.com (ID: 16)
+INFO 2025-10-05 11:48:01,430 utils 21024 20952 About to send email to: 'tashwani475@gmail.com' with subject: 'Welcome to Legal Ease, string6!'
+INFO 2025-10-05 11:48:01,435 utils 21024 20952 EmailService.send_email called with parameters:
+INFO 2025-10-05 11:48:01,441 utils 21024 20952   to_email: 'tashwani475@gmail.com' (type: <class 'str'>)
+INFO 2025-10-05 11:48:01,441 utils 21024 20952   subject: 'Welcome to Legal Ease, string6!' (type: <class 'django.utils.safestring.SafeString'>)
+INFO 2025-10-05 11:48:01,445 utils 21024 20952   message length: 712
+INFO 2025-10-05 11:48:08,473 kafka_consumer 21024 20952 Welcome notification sent successfully to tashwani475@gmail.com
+INFO 2025-10-05 12:09:44,918 kafka_consumer 21024 20952 Received message from topic 'user_signed_up': {"user_id": "17", "email": "tashwani475@gmail.com", "username": "string6", "user_type": "PETITIONER", "is_verified": false, "created_at": "2025-10-05T06:39:44.808832+00:00"}
+INFO 2025-10-05 12:09:44,925 kafka_consumer 21024 20952 Successfully parsed JSON message: {'user_id': '17', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:39:44.808832+00:00'}
+INFO 2025-10-05 12:09:44,927 kafka_consumer 21024 20952 Handling user signup event: {'user_id': '17', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:39:44.808832+00:00'}
+INFO 2025-10-05 12:09:44,931 kafka_consumer 21024 20952 Processing user signup for tashwani475@gmail.com (ID: 17)
+INFO 2025-10-05 12:09:45,039 utils 21024 20952 About to send email to: 'tashwani475@gmail.com' with subject: 'Welcome to Legal Ease, string6!'
+INFO 2025-10-05 12:09:45,040 utils 21024 20952 EmailService.send_email called with parameters:
+INFO 2025-10-05 12:09:45,041 utils 21024 20952   to_email: 'tashwani475@gmail.com' (type: <class 'str'>)
+INFO 2025-10-05 12:09:45,042 utils 21024 20952   subject: 'Welcome to Legal Ease, string6!' (type: <class 'django.utils.safestring.SafeString'>)
+INFO 2025-10-05 12:09:45,043 utils 21024 20952   message length: 712
+INFO 2025-10-05 12:09:50,809 kafka_consumer 21024 20952 Welcome notification sent successfully to tashwani475@gmail.com
+INFO 2025-10-05 12:10:36,274 kafka_consumer 21024 20952 Consumer interrupted by user
+INFO 2025-10-05 12:10:36,296 kafka_consumer 21024 20952 Kafka consumer closed
+INFO 2025-10-05 12:10:40,168 kafka_consumer 13472 3500 Starting Kafka consumer for topics: ['user_signed_up', 'user_verified', 'user_logged_in', 'password_reset_requested', 'hearing_scheduled', 'case_updated', 'document_shared', 'payment_completed']
+ERROR 2025-10-05 12:10:40,192 kafka_consumer 13472 3500 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: case_updated: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 12:10:40,192 kafka_consumer 13472 3500 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: document_shared: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 12:10:40,192 kafka_consumer 13472 3500 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: hearing_scheduled: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 12:10:40,192 kafka_consumer 13472 3500 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: password_reset_requested: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 12:10:40,195 kafka_consumer 13472 3500 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: payment_completed: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 12:10:40,197 kafka_consumer 13472 3500 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: user_logged_in: Broker: Unknown topic or partition"}
+ERROR 2025-10-05 12:10:40,197 kafka_consumer 13472 3500 Consumer error: KafkaError{code=UNKNOWN_TOPIC_OR_PART,val=3,str="Subscribed topic not available: user_verified: Broker: Unknown topic or partition"}
+INFO 2025-10-05 12:10:58,470 kafka_consumer 13472 3500 Received message from topic 'user_signed_up': {"user_id": "18", "email": "tashwani475@gmail.com", "username": "string6", "user_type": "PETITIONER", "is_verified": false, "created_at": "2025-10-05T06:40:58.450064+00:00"}
+INFO 2025-10-05 12:10:58,471 kafka_consumer 13472 3500 Successfully parsed JSON message: {'user_id': '18', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:40:58.450064+00:00'}
+INFO 2025-10-05 12:10:58,472 kafka_consumer 13472 3500 Handling user signup event: {'user_id': '18', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:40:58.450064+00:00'}
+INFO 2025-10-05 12:10:58,472 kafka_consumer 13472 3500 Processing user signup for tashwani475@gmail.com (ID: 18)
+INFO 2025-10-05 12:10:58,498 utils 13472 3500 About to send email to: 'tashwani475@gmail.com' with subject: 'Welcome to Legal Ease, string6!'
+INFO 2025-10-05 12:10:58,498 utils 13472 3500 EmailService.send_email called with parameters:
+INFO 2025-10-05 12:10:58,501 utils 13472 3500   to_email: 'tashwani475@gmail.com' (type: <class 'str'>)
+INFO 2025-10-05 12:10:58,502 utils 13472 3500   subject: 'Welcome to Legal Ease, string6!' (type: <class 'django.utils.safestring.SafeString'>)
+INFO 2025-10-05 12:10:58,502 utils 13472 3500   message length: 712
+INFO 2025-10-05 12:11:03,104 kafka_consumer 13472 3500 Welcome notification sent successfully to tashwani475@gmail.com
+INFO 2025-10-05 12:11:03,124 utils 13472 3500 Verification URL: http://localhost:3000/verify-email?token=11a25926-e5b3-4cba-8c54-b8a3585254b9
+INFO 2025-10-05 12:11:03,139 kafka_consumer 13472 3500 Verification notification processed for tashwani475@gmail.com
