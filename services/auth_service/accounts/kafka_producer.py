@@ -11,7 +11,8 @@ logger = logging.getLogger(__name__)
 class SafeKafkaProducer:
     def __init__(self):
         self.producer = None
-        self.enabled = getattr(settings, 'KAFKA_ENABLED', True)
+        # self.enabled = getattr(settings, 'KAFKA_ENABLED', False)
+        self.enabled=False
         
         logger.info(f"Initializing Kafka producer. Enabled: {self.enabled}")
         logger.info(f"Kafka bootstrap servers: {getattr(settings, 'KAFKA_BOOTSTRAP_SERVERS', 'NOT SET')}")

@@ -114,3 +114,51 @@ DEBUG 2025-10-05 12:10:58,465 kafka_producer 14560 17456 Message sent, flushing.
 INFO 2025-10-05 12:10:58,469 kafka_producer 14560 17456 Successfully sent message to user_signed_up: {'user_id': '18', 'email': 'tashwani475@gmail.com', 'username': 'string6', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-10-05T06:40:58.450064+00:00'}
 INFO 2025-10-05 12:10:58,470 api 14560 17456 Kafka produce_event returned: True
 INFO 2025-10-05 12:10:58,471 api 14560 17456 User signup event published for user tashwani475@gmail.com
+INFO 2025-10-05 15:52:50,302 kafka_producer 17768 11752 Initializing Kafka producer. Enabled: True
+INFO 2025-10-05 15:52:50,305 kafka_producer 17768 11752 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-05 15:52:50,302 kafka_producer 21804 12808 Initializing Kafka producer. Enabled: True
+INFO 2025-10-05 15:52:50,307 kafka_producer 21804 12808 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-05 15:52:50,307 kafka_producer 17768 11752 Kafka producer initialized successfully
+INFO 2025-10-05 15:52:50,307 kafka_producer 21804 12808 Kafka producer initialized successfully
+INFO 2025-10-05 15:53:14,703 kafka_producer 18864 128 Initializing Kafka producer. Enabled: True
+INFO 2025-10-05 15:53:14,703 kafka_producer 18864 128 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-05 15:53:14,703 kafka_producer 11860 2332 Initializing Kafka producer. Enabled: True
+INFO 2025-10-05 15:53:14,703 kafka_producer 11860 2332 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-05 15:53:14,703 kafka_producer 18864 128 Kafka producer initialized successfully
+INFO 2025-10-05 15:53:14,703 kafka_producer 11860 2332 Kafka producer initialized successfully
+INFO 2025-10-05 15:53:54,479 kafka_producer 13984 7136 Initializing Kafka producer. Enabled: True
+INFO 2025-10-05 15:53:54,479 kafka_producer 13984 7136 Kafka bootstrap servers: localhost:9092
+INFO 2025-10-05 15:53:54,479 kafka_producer 13984 7136 Kafka producer initialized successfully
+INFO 2025-11-25 22:05:26,214 kafka_producer 18804 14744 Initializing Kafka producer. Enabled: True
+INFO 2025-11-25 22:05:26,214 kafka_producer 18804 14744 Kafka bootstrap servers: localhost:9092
+INFO 2025-11-25 22:05:26,214 kafka_producer 18804 14744 Kafka producer initialized successfully
+INFO 2025-11-25 22:46:51,358 api 18804 14360 User user@example2.com created successfully. Attempting to publish Kafka event...
+DEBUG 2025-11-25 22:46:51,359 kafka_producer 18804 14360 send_message called with topic: user_signed_up, enabled: True, producer: True
+DEBUG 2025-11-25 22:46:51,359 kafka_producer 18804 14360 Attempting to send message to topic user_signed_up
+DEBUG 2025-11-25 22:46:51,359 kafka_producer 18804 14360 Sending message data: {'user_id': '19', 'email': 'user@example2.com', 'username': 'ashwani', 'user_type': 'PETITIONER', 'is_verified': False, 'created_at': '2025-11-25T17:16:51.334352+00:00'}
+ERROR 2025-11-25 22:47:51,376 kafka_producer 18804 14360 Failed to send message to user_signed_up: KafkaTimeoutError: Failed to update metadata after 60.0 secs.
+ERROR 2025-11-25 22:47:51,377 kafka_producer 18804 14360 Exception type: KafkaTimeoutError
+ERROR 2025-11-25 22:47:51,443 kafka_producer 18804 14360 Full traceback: Traceback (most recent call last):
+  File "C:\Users\Ashwani\OneDrive\Desktop\advanced_legal_ease\services\auth_service\accounts\kafka_producer.py", line 55, in send_message
+    future = self.producer.send(topic, message_data)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Ashwani\OneDrive\Desktop\advanced_legal_ease\services\.venv\Lib\site-packages\kafka\producer\kafka.py", line 576, in send
+    self._wait_on_metadata(topic, self.config['max_block_ms'] / 1000.0)
+  File "C:\Users\Ashwani\OneDrive\Desktop\advanced_legal_ease\services\.venv\Lib\site-packages\kafka\producer\kafka.py", line 702, in _wait_on_metadata
+    raise Errors.KafkaTimeoutError(
+kafka.errors.KafkaTimeoutError: KafkaTimeoutError: Failed to update metadata after 60.0 secs.
+
+INFO 2025-11-25 22:47:51,445 api 18804 14360 Kafka produce_event returned: False
+INFO 2025-11-25 22:47:51,445 api 18804 14360 User signup event published for user user@example2.com
+INFO 2025-11-25 22:52:12,622 kafka_producer 7476 15688 Initializing Kafka producer. Enabled: True
+INFO 2025-11-25 22:52:12,623 kafka_producer 7476 15688 Kafka bootstrap servers: localhost:9092
+INFO 2025-11-25 22:52:12,624 kafka_producer 7476 15688 Kafka producer initialized successfully
+INFO 2025-11-25 22:53:57,256 kafka_producer 20600 10800 Initializing Kafka producer. Enabled: True
+INFO 2025-11-25 22:53:57,257 kafka_producer 20600 10800 Kafka bootstrap servers: localhost:9092
+INFO 2025-11-25 22:53:57,260 kafka_producer 20600 10800 Kafka producer initialized successfully
+INFO 2025-11-25 22:54:04,183 kafka_producer 17480 14048 Initializing Kafka producer. Enabled: True
+INFO 2025-11-25 22:54:04,183 kafka_producer 17480 14048 Kafka bootstrap servers: localhost:9092
+INFO 2025-11-25 22:54:04,183 kafka_producer 17480 14048 Kafka producer initialized successfully
+INFO 2025-11-25 22:55:09,583 kafka_producer 1528 16960 Initializing Kafka producer. Enabled: False
+INFO 2025-11-25 22:55:09,583 kafka_producer 1528 16960 Kafka bootstrap servers: localhost:9092
+INFO 2025-11-25 22:55:09,583 kafka_producer 1528 16960 Kafka producer disabled by configuration
