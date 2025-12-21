@@ -162,3 +162,48 @@ INFO 2025-11-25 22:54:04,183 kafka_producer 17480 14048 Kafka producer initializ
 INFO 2025-11-25 22:55:09,583 kafka_producer 1528 16960 Initializing Kafka producer. Enabled: False
 INFO 2025-11-25 22:55:09,583 kafka_producer 1528 16960 Kafka bootstrap servers: localhost:9092
 INFO 2025-11-25 22:55:09,583 kafka_producer 1528 16960 Kafka producer disabled by configuration
+INFO 2025-11-25 23:19:46,896 kafka_producer 20308 17352 Initializing Kafka producer. Enabled: False
+INFO 2025-11-25 23:19:46,896 kafka_producer 20308 17352 Kafka bootstrap servers: localhost:9092
+INFO 2025-11-25 23:19:46,896 kafka_producer 20308 17352 Kafka producer disabled by configuration
+INFO 2025-11-26 00:06:55,889 kafka_producer 11436 14620 Initializing Kafka producer. Enabled: False
+INFO 2025-11-26 00:06:55,897 kafka_producer 11436 14620 Kafka bootstrap servers: localhost:9092
+INFO 2025-11-26 00:06:55,897 kafka_producer 11436 14620 Kafka producer disabled by configuration
+INFO 2025-11-26 00:27:24,693 kafka_producer 19348 9980 Initializing Kafka producer. Enabled: False
+INFO 2025-11-26 00:27:24,693 kafka_producer 19348 9980 Kafka bootstrap servers: localhost:9092
+INFO 2025-11-26 00:27:24,693 kafka_producer 19348 9980 Kafka producer disabled by configuration
+INFO 2025-12-21 20:36:12,259 kafka_producer 21112 10116 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 20:36:12,261 kafka_producer 21112 10116 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 20:36:12,261 kafka_producer 21112 10116 Kafka producer disabled by configuration
+INFO 2025-12-21 20:38:30,489 kafka_producer 16672 3916 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 20:38:30,489 kafka_producer 16672 3916 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 20:38:30,489 kafka_producer 16672 3916 Kafka producer disabled by configuration
+INFO 2025-12-21 20:39:47,897 kafka_producer 21960 5160 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 20:39:47,901 kafka_producer 21960 5160 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 20:39:47,902 kafka_producer 21960 5160 Kafka producer disabled by configuration
+INFO 2025-12-21 20:39:52,747 kafka_producer 10248 14168 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 20:39:52,748 kafka_producer 10248 14168 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 20:39:52,749 kafka_producer 10248 14168 Kafka producer disabled by configuration
+INFO 2025-12-21 20:39:58,469 kafka_producer 10900 21644 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 20:39:58,469 kafka_producer 10900 21644 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 20:39:58,469 kafka_producer 10900 21644 Kafka producer disabled by configuration
+INFO 2025-12-21 20:40:02,090 kafka_producer 4828 3712 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 20:40:02,091 kafka_producer 4828 3712 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 20:40:02,091 kafka_producer 4828 3712 Kafka producer disabled by configuration
+INFO 2025-12-21 22:09:27,105 kafka_producer 16752 26692 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 22:09:27,107 kafka_producer 16752 26692 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 22:09:27,107 kafka_producer 16752 26692 Kafka producer disabled by configuration
+INFO 2025-12-21 23:04:22,419 kafka_producer 14820 25100 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:04:22,419 kafka_producer 14820 25100 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:04:22,419 kafka_producer 14820 25100 Kafka producer disabled by configuration
+INFO 2025-12-21 23:04:24,189 kafka_producer 26740 21768 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:04:24,189 kafka_producer 26740 21768 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:04:24,189 kafka_producer 26740 21768 Kafka producer disabled by configuration
+INFO 2025-12-21 23:12:53,043 kafka_producer 18892 13184 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:12:53,043 kafka_producer 18892 13184 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:12:53,043 kafka_producer 18892 13184 Kafka producer disabled by configuration
+INFO 2025-12-21 23:14:23,276 kafka_producer 19372 26896 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:14:23,276 kafka_producer 19372 26896 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:14:23,276 kafka_producer 19372 26896 Kafka producer disabled by configuration
+INFO 2025-12-21 23:23:22,495 kafka_producer 9240 2496 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:23:22,495 kafka_producer 9240 2496 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:23:22,495 kafka_producer 9240 2496 Kafka producer disabled by configuration

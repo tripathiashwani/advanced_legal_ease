@@ -163,3 +163,77 @@ class EmailVerificationView(generics.GenericAPIView):
             return Response({
                 'error': 'Verification failed'
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        
+
+
+
+import os
+from django.conf import settings
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.parsers import MultiPartParser
+from .models import PDFDocument, PDFChunk
+from .utils import extract_text_from_pdf, chunk_text
+import google.generativeai as genai
+from django.conf import settings
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from .models import PDFChunk
+
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+genai.configure(api_key=GEMINI_API_KEY)
+model = genai.GenerativeModel("gemini-pro")
+
+
+
+class UploadPDFView(APIView):
+    parser_classes = [MultiPartParser]
+
+    def post(self, request):
+        files = request.FILES.getlist("files")
+
+        if not files:
+            return Response({"error": "No files uploaded"}, status=400)
+
+        for file in files:
+            doc = PDFDocument.objects.create(file=file)
+
+            pdf_path = os.path.join(settings.MEDIA_ROOT, doc.file.name)
+            text = extract_text_from_pdf(pdf_path)
+
+            chunks = chunk_text(text)
+            for chunk in chunks:
+                PDFChunk.objects.create(document=doc, content=chunk)
+
+        return Response({"message": "PDFs uploaded and processed successfully"})
+
+
+
+class ChatWithPDFView(APIView):
+    def post(self, request):
+        question = request.data.get("question")
+
+        if not question:
+            return Response({"error": "Question required"}, status=400)
+
+        # 🔍 Simple retrieval (can improve later)
+        chunks = PDFChunk.objects.all()[:5]
+        context = "\n".join([c.content for c in chunks])
+
+        prompt = f"""
+You are a legal mediation assistant.
+Answer ONLY from the given context.
+
+Context:
+{context}
+
+Question:
+{question}
+"""
+
+        response = model.generate_content(prompt)
+
+        return Response({
+            "answer": response.text
+        })

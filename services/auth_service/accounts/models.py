@@ -166,3 +166,15 @@ class UserRole(models.Model):
 
 
 
+
+
+
+
+
+class PDFDocument(models.Model):
+    file = models.FileField(upload_to="pdfs/")
+    uploaded_at = models.DateTimeField(auto_now_add=True)
+
+class PDFChunk(models.Model):
+    document = models.ForeignKey(PDFDocument, on_delete=models.CASCADE)
+    content = models.TextField()
