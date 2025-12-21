@@ -8,6 +8,19 @@ from rest_framework.response import Response
 from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from django.utils import timezone
+
+import os
+from django.conf import settings
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework.parsers import MultiPartParser
+from .models import PDFDocument, PDFChunk
+from .utils import extract_text_from_pdf, chunk_text
+import google.generativeai as genai
+from django.conf import settings
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from .models import PDFChunk
 import json
 import logging
 
@@ -167,27 +180,26 @@ class EmailVerificationView(generics.GenericAPIView):
 
 
 
-import os
-from django.conf import settings
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework.parsers import MultiPartParser
-from .models import PDFDocument, PDFChunk
-from .utils import extract_text_from_pdf, chunk_text
-import google.generativeai as genai
-from django.conf import settings
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from .models import PDFChunk
-
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-
-genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("gemini-pro")
 
 
+logger = logging.getLogger(__name__)
 
+# GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+# genai.configure(api_key="AIzaSyBPynP9gUMmwjswMOlIRKS973AS1MnEZwU")
+# model = genai.GenerativeModel(
+#     "models/gemini-pro"  # ✅ ONLY model for FREE tier
+# )
+
+from openai import OpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=OPENAI_API_KEY)
 class UploadPDFView(APIView):
+
+    logger.info("UploadPDFView initialized")
     parser_classes = [MultiPartParser]
 
     def post(self, request):
@@ -211,19 +223,29 @@ class UploadPDFView(APIView):
 
 
 class ChatWithPDFView(APIView):
+    logger.info("ChatWithPDFView initialized")
+
     def post(self, request):
         question = request.data.get("question")
 
         if not question:
-            return Response({"error": "Question required"}, status=400)
+            return Response(
+                {"error": "Question required"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
 
-        # 🔍 Simple retrieval (can improve later)
+        # 🔍 Simple retrieval (replace with vector search later)
         chunks = PDFChunk.objects.all()[:5]
-        context = "\n".join([c.content for c in chunks])
+        logger.info(f"Retrieved {len(chunks)} chunks for question: {question}")
+        logger.info("Chunks content preview:")
+        # for c in chunks:
+        #     logger.info(c.content[:100])  # Log first 100 characters of each chunk
+        context = "\n".join(c.content for c in chunks)
+        # logger.info(f"Constructed context for question: {context}")
 
         prompt = f"""
 You are a legal mediation assistant.
-Answer ONLY from the given context.
+Answer ONLY using the provided context.
 
 Context:
 {context}
@@ -232,8 +254,15 @@ Question:
 {question}
 """
 
-        response = model.generate_content(prompt)
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": "You are a helpful legal assistant."},
+                {"role": "user", "content": prompt},
+            ],
+            temperature=0.2,
+        )
 
         return Response({
-            "answer": response.text
+            "answer": response.choices[0].message.content
         })

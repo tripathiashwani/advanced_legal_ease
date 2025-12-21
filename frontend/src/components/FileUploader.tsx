@@ -1,24 +1,25 @@
 const FileUploader = () => {
-  const handleUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (!files) return;
+    const BASE_AUTH_URL = "http://127.0.0.1:8001/api/accounts/"
 
-    // 🔗 Send files to backend for PDF embedding
-    console.log("Uploaded PDFs:", files);
+    const formData = new FormData();
+    Array.from(files).forEach((file) =>
+      formData.append("files", file)
+    );
+
+    await fetch(`${BASE_AUTH_URL}upload-pdf/`, {
+      method: "POST",
+      body: formData,
+    });
+
+    alert("PDF uploaded successfully");
   };
 
   return (
     <div>
-      <label className="block text-sm font-medium mb-2">
-        Upload Case Documents (PDF)
-      </label>
-      <input
-        type="file"
-        accept="application/pdf"
-        multiple
-        onChange={handleUpload}
-        className="block w-full text-sm"
-      />
+      <input type="file" multiple accept="application/pdf" onChange={handleUpload} />
     </div>
   );
 };

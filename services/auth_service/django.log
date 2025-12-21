@@ -207,3 +207,263 @@ INFO 2025-12-21 23:14:23,276 kafka_producer 19372 26896 Kafka producer disabled 
 INFO 2025-12-21 23:23:22,495 kafka_producer 9240 2496 Initializing Kafka producer. Enabled: False
 INFO 2025-12-21 23:23:22,495 kafka_producer 9240 2496 Kafka bootstrap servers: localhost:9092
 INFO 2025-12-21 23:23:22,495 kafka_producer 9240 2496 Kafka producer disabled by configuration
+INFO 2025-12-21 23:41:06,300 kafka_producer 18104 27156 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:41:06,308 kafka_producer 18104 27156 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:41:06,308 kafka_producer 18104 27156 Kafka producer disabled by configuration
+INFO 2025-12-21 23:41:25,960 kafka_producer 13768 26164 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:41:25,961 kafka_producer 13768 26164 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:41:25,961 kafka_producer 13768 26164 Kafka producer disabled by configuration
+INFO 2025-12-21 23:41:30,848 kafka_producer 17992 14632 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:41:30,848 kafka_producer 17992 14632 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:41:30,852 kafka_producer 17992 14632 Kafka producer disabled by configuration
+INFO 2025-12-21 23:41:35,720 kafka_producer 10920 124 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:41:35,724 kafka_producer 10920 124 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:41:35,725 kafka_producer 10920 124 Kafka producer disabled by configuration
+INFO 2025-12-21 23:41:36,728 api 10920 124 UploadPDFView initialized
+INFO 2025-12-21 23:41:44,219 kafka_producer 15624 25348 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:41:44,219 kafka_producer 15624 25348 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:41:44,219 kafka_producer 15624 25348 Kafka producer disabled by configuration
+INFO 2025-12-21 23:41:45,066 api 15624 25348 UploadPDFView initialized
+INFO 2025-12-21 23:41:48,804 kafka_producer 3916 10204 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:41:48,804 kafka_producer 3916 10204 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:41:48,804 kafka_producer 3916 10204 Kafka producer disabled by configuration
+INFO 2025-12-21 23:41:49,663 api 3916 10204 UploadPDFView initialized
+INFO 2025-12-21 23:41:52,892 kafka_producer 19028 17108 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:41:52,892 kafka_producer 19028 17108 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:41:52,892 kafka_producer 19028 17108 Kafka producer disabled by configuration
+INFO 2025-12-21 23:41:53,522 api 19028 17108 UploadPDFView initialized
+INFO 2025-12-21 23:42:39,034 kafka_producer 25720 11104 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:42:39,034 kafka_producer 25720 11104 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:42:39,034 kafka_producer 25720 11104 Kafka producer disabled by configuration
+INFO 2025-12-21 23:42:39,848 api 25720 11104 UploadPDFView initialized
+INFO 2025-12-21 23:42:53,665 kafka_producer 1936 15336 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:42:53,665 kafka_producer 1936 15336 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:42:53,665 kafka_producer 1936 15336 Kafka producer disabled by configuration
+INFO 2025-12-21 23:42:54,591 api 1936 15336 UploadPDFView initialized
+INFO 2025-12-21 23:47:44,685 kafka_producer 10404 27268 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:47:44,685 kafka_producer 10404 27268 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:47:44,685 kafka_producer 10404 27268 Kafka producer disabled by configuration
+INFO 2025-12-21 23:47:45,631 api 10404 27268 UploadPDFView initialized
+INFO 2025-12-21 23:47:45,632 api 10404 27268 ChatWithPDFView initialized
+INFO 2025-12-21 23:54:14,601 kafka_producer 13196 3384 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:54:14,602 kafka_producer 13196 3384 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:54:14,602 kafka_producer 13196 3384 Kafka producer disabled by configuration
+INFO 2025-12-21 23:54:15,443 api 13196 3384 UploadPDFView initialized
+INFO 2025-12-21 23:54:15,443 api 13196 3384 ChatWithPDFView initialized
+INFO 2025-12-21 23:54:21,952 kafka_producer 27636 19632 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:54:21,952 kafka_producer 27636 19632 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:54:21,953 kafka_producer 27636 19632 Kafka producer disabled by configuration
+INFO 2025-12-21 23:54:22,592 api 27636 19632 UploadPDFView initialized
+INFO 2025-12-21 23:54:22,592 api 27636 19632 ChatWithPDFView initialized
+INFO 2025-12-21 23:55:29,151 kafka_producer 8300 17564 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:55:29,151 kafka_producer 8300 17564 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:55:29,151 kafka_producer 8300 17564 Kafka producer disabled by configuration
+INFO 2025-12-21 23:55:29,823 api 8300 17564 UploadPDFView initialized
+INFO 2025-12-21 23:55:29,823 api 8300 17564 ChatWithPDFView initialized
+INFO 2025-12-21 23:57:18,240 kafka_producer 21380 24904 Initializing Kafka producer. Enabled: False
+INFO 2025-12-21 23:57:18,242 kafka_producer 21380 24904 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-21 23:57:18,242 kafka_producer 21380 24904 Kafka producer disabled by configuration
+INFO 2025-12-21 23:57:18,900 api 21380 24904 UploadPDFView initialized
+INFO 2025-12-21 23:57:18,902 api 21380 24904 ChatWithPDFView initialized
+INFO 2025-12-22 00:00:07,573 kafka_producer 4044 2680 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:00:07,573 kafka_producer 4044 2680 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:00:07,573 kafka_producer 4044 2680 Kafka producer disabled by configuration
+INFO 2025-12-22 00:00:08,630 api 4044 2680 UploadPDFView initialized
+INFO 2025-12-22 00:00:08,630 api 4044 2680 ChatWithPDFView initialized
+INFO 2025-12-22 00:28:25,239 kafka_producer 20632 8280 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:28:25,240 kafka_producer 20632 8280 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:28:25,241 kafka_producer 20632 8280 Kafka producer disabled by configuration
+INFO 2025-12-22 00:29:30,218 kafka_producer 19472 19820 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:29:30,220 kafka_producer 19472 19820 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:29:30,221 kafka_producer 19472 19820 Kafka producer disabled by configuration
+INFO 2025-12-22 00:29:50,980 kafka_producer 16624 19516 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:29:50,980 kafka_producer 16624 19516 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:29:50,980 kafka_producer 16624 19516 Kafka producer disabled by configuration
+INFO 2025-12-22 00:29:52,031 api 16624 19516 UploadPDFView initialized
+INFO 2025-12-22 00:29:52,034 api 16624 19516 ChatWithPDFView initialized
+INFO 2025-12-22 00:30:34,523 kafka_producer 8264 19168 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:30:34,523 kafka_producer 8264 19168 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:30:34,524 kafka_producer 8264 19168 Kafka producer disabled by configuration
+INFO 2025-12-22 00:30:35,255 api 8264 19168 UploadPDFView initialized
+INFO 2025-12-22 00:30:35,256 api 8264 19168 ChatWithPDFView initialized
+INFO 2025-12-22 00:31:09,165 kafka_producer 9464 7604 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:31:09,166 kafka_producer 9464 7604 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:31:09,167 kafka_producer 9464 7604 Kafka producer disabled by configuration
+INFO 2025-12-22 00:31:10,317 api 9464 7604 UploadPDFView initialized
+INFO 2025-12-22 00:31:38,752 kafka_producer 16900 24600 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:31:38,752 kafka_producer 16900 24600 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:31:38,754 kafka_producer 16900 24600 Kafka producer disabled by configuration
+INFO 2025-12-22 00:31:47,591 kafka_producer 25988 27184 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:31:47,591 kafka_producer 25988 27184 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:31:47,591 kafka_producer 25988 27184 Kafka producer disabled by configuration
+INFO 2025-12-22 00:31:50,864 api 25988 27184 UploadPDFView initialized
+INFO 2025-12-22 00:32:14,374 kafka_producer 10364 22272 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:32:14,374 kafka_producer 10364 22272 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:32:14,374 kafka_producer 10364 22272 Kafka producer disabled by configuration
+INFO 2025-12-22 00:32:17,104 api 10364 22272 UploadPDFView initialized
+INFO 2025-12-22 00:32:17,106 api 10364 22272 ChatWithPDFView initialized
+INFO 2025-12-22 00:32:59,046 kafka_producer 27112 3192 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:32:59,046 kafka_producer 27112 3192 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:32:59,046 kafka_producer 27112 3192 Kafka producer disabled by configuration
+INFO 2025-12-22 00:33:16,099 kafka_producer 21076 20872 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:33:16,099 kafka_producer 21076 20872 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:33:16,099 kafka_producer 21076 20872 Kafka producer disabled by configuration
+INFO 2025-12-22 00:33:18,481 api 21076 20872 UploadPDFView initialized
+INFO 2025-12-22 00:33:18,481 api 21076 20872 ChatWithPDFView initialized
+INFO 2025-12-22 00:33:24,581 kafka_producer 16492 11280 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:33:24,581 kafka_producer 16492 11280 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:33:24,581 kafka_producer 16492 11280 Kafka producer disabled by configuration
+INFO 2025-12-22 00:33:28,593 api 16492 11280 UploadPDFView initialized
+INFO 2025-12-22 00:33:34,072 kafka_producer 8832 11828 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:33:34,072 kafka_producer 8832 11828 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:33:34,072 kafka_producer 8832 11828 Kafka producer disabled by configuration
+INFO 2025-12-22 00:33:36,138 api 8832 11828 UploadPDFView initialized
+INFO 2025-12-22 00:33:54,541 kafka_producer 10284 7204 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:33:54,541 kafka_producer 10284 7204 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:33:54,541 kafka_producer 10284 7204 Kafka producer disabled by configuration
+INFO 2025-12-22 00:33:56,996 api 10284 7204 UploadPDFView initialized
+INFO 2025-12-22 00:33:57,462 api 10284 25224 UploadPDFView initialized
+INFO 2025-12-22 00:34:27,190 kafka_producer 19612 1632 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:34:27,190 kafka_producer 19612 1632 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:34:27,190 kafka_producer 19612 1632 Kafka producer disabled by configuration
+INFO 2025-12-22 00:34:30,383 api 19612 1632 UploadPDFView initialized
+INFO 2025-12-22 00:34:36,901 kafka_producer 10272 5308 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:34:36,901 kafka_producer 10272 5308 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:34:36,901 kafka_producer 10272 5308 Kafka producer disabled by configuration
+INFO 2025-12-22 00:34:40,378 api 10272 5308 UploadPDFView initialized
+INFO 2025-12-22 00:35:16,895 kafka_producer 20744 13832 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:35:16,895 kafka_producer 20744 13832 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:35:16,895 kafka_producer 20744 13832 Kafka producer disabled by configuration
+INFO 2025-12-22 00:35:19,265 api 20744 13832 UploadPDFView initialized
+INFO 2025-12-22 00:35:19,265 api 20744 13832 ChatWithPDFView initialized
+INFO 2025-12-22 00:35:37,652 kafka_producer 13384 21920 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:35:37,652 kafka_producer 13384 21920 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:35:37,652 kafka_producer 13384 21920 Kafka producer disabled by configuration
+INFO 2025-12-22 00:35:38,348 api 13384 21920 UploadPDFView initialized
+INFO 2025-12-22 00:35:38,348 api 13384 21920 ChatWithPDFView initialized
+INFO 2025-12-22 00:35:42,236 kafka_producer 26068 18764 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:35:42,236 kafka_producer 26068 18764 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:35:42,236 kafka_producer 26068 18764 Kafka producer disabled by configuration
+INFO 2025-12-22 00:35:44,737 api 26068 18764 UploadPDFView initialized
+INFO 2025-12-22 00:35:44,737 api 26068 18764 ChatWithPDFView initialized
+INFO 2025-12-22 00:36:10,542 kafka_producer 25984 25176 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:36:10,544 kafka_producer 25984 25176 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:36:10,545 kafka_producer 25984 25176 Kafka producer disabled by configuration
+INFO 2025-12-22 00:36:13,310 api 25984 16736 UploadPDFView initialized
+INFO 2025-12-22 00:36:13,310 api 25984 16736 ChatWithPDFView initialized
+INFO 2025-12-22 00:36:25,179 kafka_producer 20948 5332 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:36:25,180 kafka_producer 20948 5332 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:36:25,180 kafka_producer 20948 5332 Kafka producer disabled by configuration
+INFO 2025-12-22 00:36:27,362 api 20948 5332 UploadPDFView initialized
+INFO 2025-12-22 00:36:27,362 api 20948 5332 ChatWithPDFView initialized
+INFO 2025-12-22 00:44:57,751 kafka_producer 10912 26524 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:44:57,751 kafka_producer 10912 26524 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:44:57,751 kafka_producer 10912 26524 Kafka producer disabled by configuration
+INFO 2025-12-22 00:45:00,533 api 10912 26524 UploadPDFView initialized
+INFO 2025-12-22 00:45:00,533 api 10912 26524 ChatWithPDFView initialized
+INFO 2025-12-22 00:45:07,436 kafka_producer 21508 16192 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:45:07,436 kafka_producer 21508 16192 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:45:07,436 kafka_producer 21508 16192 Kafka producer disabled by configuration
+INFO 2025-12-22 00:45:11,582 api 21508 16192 UploadPDFView initialized
+INFO 2025-12-22 00:45:11,582 api 21508 16192 ChatWithPDFView initialized
+INFO 2025-12-22 00:45:21,078 api 21508 15268 Retrieved 4 chunks for question: hi
+INFO 2025-12-22 00:45:21,079 api 21508 15268 Chunks content preview:
+INFO 2025-12-22 00:46:50,879 kafka_producer 25740 13316 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:46:50,879 kafka_producer 25740 13316 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:46:50,879 kafka_producer 25740 13316 Kafka producer disabled by configuration
+INFO 2025-12-22 00:46:53,218 api 25740 13316 UploadPDFView initialized
+INFO 2025-12-22 00:46:53,218 api 25740 13316 ChatWithPDFView initialized
+INFO 2025-12-22 00:46:56,814 kafka_producer 25180 22232 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:46:56,814 kafka_producer 25180 22232 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:46:56,814 kafka_producer 25180 22232 Kafka producer disabled by configuration
+INFO 2025-12-22 00:46:58,601 api 25180 22232 UploadPDFView initialized
+INFO 2025-12-22 00:46:58,601 api 25180 22232 ChatWithPDFView initialized
+INFO 2025-12-22 00:47:02,636 kafka_producer 6568 27472 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:47:02,637 kafka_producer 6568 27472 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:47:02,637 kafka_producer 6568 27472 Kafka producer disabled by configuration
+INFO 2025-12-22 00:47:04,623 api 6568 27472 UploadPDFView initialized
+INFO 2025-12-22 00:47:04,623 api 6568 27472 ChatWithPDFView initialized
+INFO 2025-12-22 00:47:08,836 api 6568 12916 Retrieved 4 chunks for question: hi
+INFO 2025-12-22 00:47:08,837 api 6568 12916 Chunks content preview:
+INFO 2025-12-22 00:47:08,837 api 6568 12916 C++ Foundation with Data Structures Topic : Pointers Address of Operator (&) The address of a variab
+INFO 2025-12-22 00:47:08,838 api 6568 12916 secondvalue is 20 thirdvalue is b p1 = &firstvalue; // p1 = address of firstvalue p2 = &secondvalue;
+INFO 2025-12-22 00:47:08,838 api 6568 12916 mychar + 1; myshort = myshort + 1; mylong = mylong + 1; Essentially, these are the four possible com
+INFO 2025-12-22 00:47:08,838 api 6568 12916 **q = &p; // Next three statements will print same value i.e. address of a cout << &a << endl; cout 
+INFO 2025-12-22 00:47:08,839 api 6568 12916 Constructed context for question: C++ Foundation with Data Structures Topic : Pointers Address of Operator (&) The address of a variable can be obtained by preceding the name of a variable with an ampersand sign (&), known as address-­‐of operator. For example: cout << (&var) << endl; This would print address of variable var; by preceding the name of the variable var with the address-­‐of operator (&), we are no longer printing the content of the variable itself, but its address. What are Pointers? Pointers are one of the most important aspects of C++. Pointers are another type of variables in CPP and these variables store addresses of other variables. While creating a pointer variable, we need to mention the type of data whose address is stored in the pointer. e.g. in order to create a pointer which stores address of an integer, we need to write: int* p; This means that p will contain address of an integer. So, if a pointer is going to store address of datatype X, it will be declared like this: X* p; Now let’s say we have an integer i & an integer pointer p, we will use addressof(&) operator in order to put address of i in p. Address of operator:& as studied abpve is a unary operator which returns address of a variable. e.g. &i will give us address of variable i. Here is the code to put address of i in p. int i = 10; int* p; p = &i; Dereference Operator As just seen, a variable which stores the address of another variable is called a pointer. Pointers are said to "point to" the variable whose address they store. An interesting property of pointers is that they can be used to access the variable they point to directly. This is done by preceding the pointer name with the dereference operator (*). The operator itself can be read as "value pointed to by". Therefore, following with the values of the previous example, consider the following statement: int a = *p; So in this assignment we are assigning value pointed to by pointer p(i.e. value of to int i) to int variable a. The reference and dereference operators are thus complementary: • & is the address-­‐of operator, and can be read simply as "address of" • * is the dereference operator, and can be read as "value pointed to by" Thus, they have sort of opposite meanings: An address obtained with & can be dereferenced with *. Note that the asterisk (*) used when declaring a pointer only means that it is a pointer (it is part of its type compound specifier), and should not be confused with the dereference operator seen above, but which is also written with an asterisk (*). They are simply two different things represented with the same sign. Following #include <iostream> using namespace std; int main () { int firstvalue = 5, secondvalue = 15; char thirdvalue = ‘a’; int * p1, * p2; char *p3; firstvalue is 10
+secondvalue is 20 thirdvalue is b p1 = &firstvalue; // p1 = address of firstvalue p2 = &secondvalue; // p2 = address of secondvalue p3 = &thirdvalue; // p3 = address of thirdvalue *p1 = 10; // value pointed to by p1 = 10 *p2 = *p1; // value pointed to by p2 = value pointed to by p1 p1 = p2; // p1 = p2 (value of pointer is copied) *p1 = 20; // value pointed to by p1 = 20 *p3 = ‘b’ // value pointed to by p3 = ‘b ’ cout << "firstvalue is " << firstvalue << '\n'; cout << "secondvalue is " << secondvalue << '\n'; cout << "thirdvalue is " << thirdvalue << '\n'; return 0; } Note: While solving pointers question, you should use pen and paper and draw things to get better idea. Null Pointer Consider the following statement – int *p; Here we have created a pointer variable that contains garbage value. In order to dereference the pointer, we will try reading out the value at the garbage stored in the pointer. This will lead to unexpected results or segmentation faults. Hence we should never leave a pointer uninitialized and instead initialize it to NULL, so as to avoid unexpected behavior. int *p = NULL; // NULL is a constant with a value 0 int *q = 0; // Same as above So now if we try to dereference the pointer we will get segmentation fault as 0 is a reserved memory address. Pointer Arithmetic Arithmetic operations on pointers behave differently than they do on simple data types we studied earlier. Only addition and subtraction operations are allowed; the others aren’t allowed on pointers. But both addition and subtraction have a slightly different behavior with pointers, according to the size of the data type to which they point. For example: char always has a size of 1 byte, short is generally larger than that, and int and long are even larger; the exact size of these being dependent on the system. For example, let's imagine that in a given system, char takes 1 byte, short takes 2 bytes, and long takes 4. Suppose now that we define three pointers in this compiler: char *mychar; short *myshort; long *mylong; and that we know that they point to the memory locations 1000, 2000, and 3000, respectively. Therefore, if we write: ++mychar; ++myshort; ++mylong; mychar, as one would expect, would contain the value 1001. But not so obviously, myshort would contain the value 2002, and mylong would contain 3004, even though they have each been incremented only once. The reason is that, when adding one to a pointer, the pointer is made to point to the following element of the same type, and, therefore, the size in bytes of the type it points to is added to the pointer. This is applicable both when adding and subtracting any number to a pointer. It would happen exactly the same if we wrote: mychar =
+mychar + 1; myshort = myshort + 1; mylong = mylong + 1; Essentially, these are the four possible combinations of the dereference operator with both the prefix and suffix versions of the increment operator (the same being applicable also to the decrement operator): 1 2 3 4 *p++ // same as *(p++): increment pointer, and dereference unincremented address *++p // same as *(++p): increment pointer, and dereference incremented address ++*p // same as ++(*p): dereference pointer, and increment the value it points to (*p)++ // dereference pointer, and post-­‐increment the value it points to Pointers may be compared by using relational operators, such as ==, <, and >. If p1 and p2 point to variables that are related to each other, such as elements of the same array, then p1 and p2 can be meaningfully compared. Pointer and Arrays Pointers and arrays are intricately linked. An Array is actually a pointer that points to the first element of the array. Because the array variable is a pointer, you can dereference it, which returns array element 0. Consider the following code – int a[] = {1,2,3,4,5}; int *b = &a[0]; cout << b << endl; cout << a << endl; cout << *b << endl; // This will print 1 Both b and a will print same same address as they are referring to first element of the array. Also in arrays -­‐ a[i] is same as *(a + i). Consider an example for the same– #include<iostream> using namespace std; int main(){ int a[5] = {1,2,3,4,5}; cout << *(a + 2) << endl; } Output: 3 Differences between arrays and pointers: 1. the sizeof operator: sizeof(array) returns the amount of memory used by all elements in array whereas sizeof(pointer) only returns the amount of memory used by the pointer variable itself. #include<iostream> using namespace std; int main(){ int a[5] = {1,2,3,4,5}; int *b = &a[0]; cout << sizeof(a) << endl; cout << sizeof(b) << endl; } Output : 20 8 // Size of pointer is compiler dependent. Here it is 8. 2. the & operator In the example above &a is an alias for &a[0] and returns the address of the first element in array &b returns the address of pointer. 3. Pointer variable can be assigned a value whereas array variable cannot be. int a[10]; int *p; p=a; //legal a=p; //illegal 4. Arithmetic on pointer variable is allowed, but not allowed on array variable. p++; //Legal a++; //illegal Double Pointer As we know by now that pointers are variables that store address of other variables, so we can create variables that store address of pointer itself i.e. a pointer to a pointer. Let’s see how can we create one. int a = 10; int *p = &a; int **q = &p; Here q is a pointer to a pointer i.e. a double pointer,as indicated by **. Consider the following code for better understanding – #include<iostream> using namespace std; int main(){ int a = 10; int *p = &a; int
+**q = &p; // Next three statements will print same value i.e. address of a cout << &a << endl; cout << p << endl; cout << *q << endl; // Next two statements will print same value i.e. address of p cout << &p << endl; cout << q << endl; // Next two statements will print same value i.e. value of a which is 10 cout << a << endl; cout << *p << endl; cout << **q << endl; } Void Pointer A void pointer is a generic pointer, it has no associated type with it. A void pointer can hold address of any type and can be typcasted to any type. Void pointer is declared normally the way we do for pointers. void *ptr; This statement will create a void pointer. Example: void *v; int *i; int ivar; char chvar; float fvar; v = &ivar; // valid v = &chvar; //valid v = &fvar; // valid i = &ivar; //valid i = &chvar; //invalid i = &fvar; //invalid Thus we can use void pointer to store address of any variable.
+INFO 2025-12-22 00:57:00,917 api 6568 19140 Retrieved 5 chunks for question: tell me about my achievements
+INFO 2025-12-22 00:57:00,918 api 6568 19140 Chunks content preview:
+INFO 2025-12-22 00:57:00,919 api 6568 19140 C++ Foundation with Data Structures Topic : Pointers Address of Operator (&) The address of a variab
+INFO 2025-12-22 00:57:00,920 api 6568 19140 secondvalue is 20 thirdvalue is b p1 = &firstvalue; // p1 = address of firstvalue p2 = &secondvalue;
+INFO 2025-12-22 00:57:00,920 api 6568 19140 mychar + 1; myshort = myshort + 1; mylong = mylong + 1; Essentially, these are the four possible com
+INFO 2025-12-22 00:57:00,924 api 6568 19140 **q = &p; // Next three statements will print same value i.e. address of a cout << &a << endl; cout 
+INFO 2025-12-22 00:57:00,926 api 6568 19140 ASHWANI TRIPATHI ♂phone +91-9260981501 /envel⌢petashwani475@gmail.com /linkedinLinkedin /githubGitHu
+INFO 2025-12-22 00:57:00,926 api 6568 19140 Constructed context for question: C++ Foundation with Data Structures Topic : Pointers Address of Operator (&) The address of a variable can be obtained by preceding the name of a variable with an ampersand sign (&), known as address-­‐of operator. For example: cout << (&var) << endl; This would print address of variable var; by preceding the name of the variable var with the address-­‐of operator (&), we are no longer printing the content of the variable itself, but its address. What are Pointers? Pointers are one of the most important aspects of C++. Pointers are another type of variables in CPP and these variables store addresses of other variables. While creating a pointer variable, we need to mention the type of data whose address is stored in the pointer. e.g. in order to create a pointer which stores address of an integer, we need to write: int* p; This means that p will contain address of an integer. So, if a pointer is going to store address of datatype X, it will be declared like this: X* p; Now let’s say we have an integer i & an integer pointer p, we will use addressof(&) operator in order to put address of i in p. Address of operator:& as studied abpve is a unary operator which returns address of a variable. e.g. &i will give us address of variable i. Here is the code to put address of i in p. int i = 10; int* p; p = &i; Dereference Operator As just seen, a variable which stores the address of another variable is called a pointer. Pointers are said to "point to" the variable whose address they store. An interesting property of pointers is that they can be used to access the variable they point to directly. This is done by preceding the pointer name with the dereference operator (*). The operator itself can be read as "value pointed to by". Therefore, following with the values of the previous example, consider the following statement: int a = *p; So in this assignment we are assigning value pointed to by pointer p(i.e. value of to int i) to int variable a. The reference and dereference operators are thus complementary: • & is the address-­‐of operator, and can be read simply as "address of" • * is the dereference operator, and can be read as "value pointed to by" Thus, they have sort of opposite meanings: An address obtained with & can be dereferenced with *. Note that the asterisk (*) used when declaring a pointer only means that it is a pointer (it is part of its type compound specifier), and should not be confused with the dereference operator seen above, but which is also written with an asterisk (*). They are simply two different things represented with the same sign. Following #include <iostream> using namespace std; int main () { int firstvalue = 5, secondvalue = 15; char thirdvalue = ‘a’; int * p1, * p2; char *p3; firstvalue is 10
+secondvalue is 20 thirdvalue is b p1 = &firstvalue; // p1 = address of firstvalue p2 = &secondvalue; // p2 = address of secondvalue p3 = &thirdvalue; // p3 = address of thirdvalue *p1 = 10; // value pointed to by p1 = 10 *p2 = *p1; // value pointed to by p2 = value pointed to by p1 p1 = p2; // p1 = p2 (value of pointer is copied) *p1 = 20; // value pointed to by p1 = 20 *p3 = ‘b’ // value pointed to by p3 = ‘b ’ cout << "firstvalue is " << firstvalue << '\n'; cout << "secondvalue is " << secondvalue << '\n'; cout << "thirdvalue is " << thirdvalue << '\n'; return 0; } Note: While solving pointers question, you should use pen and paper and draw things to get better idea. Null Pointer Consider the following statement – int *p; Here we have created a pointer variable that contains garbage value. In order to dereference the pointer, we will try reading out the value at the garbage stored in the pointer. This will lead to unexpected results or segmentation faults. Hence we should never leave a pointer uninitialized and instead initialize it to NULL, so as to avoid unexpected behavior. int *p = NULL; // NULL is a constant with a value 0 int *q = 0; // Same as above So now if we try to dereference the pointer we will get segmentation fault as 0 is a reserved memory address. Pointer Arithmetic Arithmetic operations on pointers behave differently than they do on simple data types we studied earlier. Only addition and subtraction operations are allowed; the others aren’t allowed on pointers. But both addition and subtraction have a slightly different behavior with pointers, according to the size of the data type to which they point. For example: char always has a size of 1 byte, short is generally larger than that, and int and long are even larger; the exact size of these being dependent on the system. For example, let's imagine that in a given system, char takes 1 byte, short takes 2 bytes, and long takes 4. Suppose now that we define three pointers in this compiler: char *mychar; short *myshort; long *mylong; and that we know that they point to the memory locations 1000, 2000, and 3000, respectively. Therefore, if we write: ++mychar; ++myshort; ++mylong; mychar, as one would expect, would contain the value 1001. But not so obviously, myshort would contain the value 2002, and mylong would contain 3004, even though they have each been incremented only once. The reason is that, when adding one to a pointer, the pointer is made to point to the following element of the same type, and, therefore, the size in bytes of the type it points to is added to the pointer. This is applicable both when adding and subtracting any number to a pointer. It would happen exactly the same if we wrote: mychar =
+mychar + 1; myshort = myshort + 1; mylong = mylong + 1; Essentially, these are the four possible combinations of the dereference operator with both the prefix and suffix versions of the increment operator (the same being applicable also to the decrement operator): 1 2 3 4 *p++ // same as *(p++): increment pointer, and dereference unincremented address *++p // same as *(++p): increment pointer, and dereference incremented address ++*p // same as ++(*p): dereference pointer, and increment the value it points to (*p)++ // dereference pointer, and post-­‐increment the value it points to Pointers may be compared by using relational operators, such as ==, <, and >. If p1 and p2 point to variables that are related to each other, such as elements of the same array, then p1 and p2 can be meaningfully compared. Pointer and Arrays Pointers and arrays are intricately linked. An Array is actually a pointer that points to the first element of the array. Because the array variable is a pointer, you can dereference it, which returns array element 0. Consider the following code – int a[] = {1,2,3,4,5}; int *b = &a[0]; cout << b << endl; cout << a << endl; cout << *b << endl; // This will print 1 Both b and a will print same same address as they are referring to first element of the array. Also in arrays -­‐ a[i] is same as *(a + i). Consider an example for the same– #include<iostream> using namespace std; int main(){ int a[5] = {1,2,3,4,5}; cout << *(a + 2) << endl; } Output: 3 Differences between arrays and pointers: 1. the sizeof operator: sizeof(array) returns the amount of memory used by all elements in array whereas sizeof(pointer) only returns the amount of memory used by the pointer variable itself. #include<iostream> using namespace std; int main(){ int a[5] = {1,2,3,4,5}; int *b = &a[0]; cout << sizeof(a) << endl; cout << sizeof(b) << endl; } Output : 20 8 // Size of pointer is compiler dependent. Here it is 8. 2. the & operator In the example above &a is an alias for &a[0] and returns the address of the first element in array &b returns the address of pointer. 3. Pointer variable can be assigned a value whereas array variable cannot be. int a[10]; int *p; p=a; //legal a=p; //illegal 4. Arithmetic on pointer variable is allowed, but not allowed on array variable. p++; //Legal a++; //illegal Double Pointer As we know by now that pointers are variables that store address of other variables, so we can create variables that store address of pointer itself i.e. a pointer to a pointer. Let’s see how can we create one. int a = 10; int *p = &a; int **q = &p; Here q is a pointer to a pointer i.e. a double pointer,as indicated by **. Consider the following code for better understanding – #include<iostream> using namespace std; int main(){ int a = 10; int *p = &a; int
+**q = &p; // Next three statements will print same value i.e. address of a cout << &a << endl; cout << p << endl; cout << *q << endl; // Next two statements will print same value i.e. address of p cout << &p << endl; cout << q << endl; // Next two statements will print same value i.e. value of a which is 10 cout << a << endl; cout << *p << endl; cout << **q << endl; } Void Pointer A void pointer is a generic pointer, it has no associated type with it. A void pointer can hold address of any type and can be typcasted to any type. Void pointer is declared normally the way we do for pointers. void *ptr; This statement will create a void pointer. Example: void *v; int *i; int ivar; char chvar; float fvar; v = &ivar; // valid v = &chvar; //valid v = &fvar; // valid i = &ivar; //valid i = &chvar; //invalid i = &fvar; //invalid Thus we can use void pointer to store address of any variable.
+ASHWANI TRIPATHI ♂phone +91-9260981501 /envel⌢petashwani475@gmail.com /linkedinLinkedin /githubGitHub EDUCATION GL Bajaj Institute Of Technology And Management Greater Noida 2021-2025 Bachelor of Technology in Computer Science CGPA: 8.01 BNPN Inter College 2018-2019 Matric Percentage: 88.84 PROJECTS E-portal for Case management and Hearings(Recognized as Patent by GOI)| Team Project(working) DjangoRestframework, WebSDK, OpenAI, Vue.js, Tailwind, PostgreSQL • The Objective of this platform is to simplify the mediation process for civil cases using an online platform. • client can access case details, pending documents, notification for meeting time and date etc. • Lawyers and Mediators can schedule meetings with lawyers and clients and have all hosting control of the meeting.. • Secure video conferences for clients, lawyers mediators with different functionalities. Blog App -( Redis + CI/CD pipeline)| Django, Django rest framework, Jenkins, Ubuntu, Git • A practice Blog app for Implementing Caching with help of redis. • Created full ci cd pipeline with help of ubuntu VM, nginx, gunicorn and Github. Freaky-friends Web App| DRF, AWS, Redis, Celery, GraphQL, Docker, Netlify, Vue.js, Tailwind, PostgreSQL Source Code| Test here • Implemented authentication and authorization. • One can send, accept, or reject a friend or date request to another. • Improved performance using Redis with API’s. • One can create, like, report, and comment on Post. • Suggests persons and trends and gets real-time notifications. • Deployed project using Netlify, and AWS. • Designed and configured Docker-based environments to manage a multi-service application, including backend (Django), frontend (Vue.js), and asynchronous task processing (Celery with Redis). TECHNICAL SKILLS Programming Languages: C, CPP, Python, Java Web Development: Django, DRF, Vue.js, CSS, HTML Databases: PostgreSQL, MySQL, MongoDB Tools: Redis, Docker, Jenkins, AWS, GraphQL, Postman, Git, Github, Microsoft VS code TECHNICAL COURSES Data Structures and Algorithms, Operating Systems, Object Oriented Programming, Web Design, Database management system, Computer Networks, and Cloud Com- puting. ALGORITHMIC PROGRAMMING ACHIEVEMENTS • Scored 1200+ at GFG . [Profile] • Solved 900+ problems at Leetcode. [Profile] HACKATHON • Hackfest 2024 finalist among 1000 candidates [View]
+INFO 2025-12-22 00:57:37,815 kafka_producer 12908 10080 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:57:37,815 kafka_producer 12908 10080 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:57:37,815 kafka_producer 12908 10080 Kafka producer disabled by configuration
+INFO 2025-12-22 00:57:42,319 api 12908 10080 UploadPDFView initialized
+INFO 2025-12-22 00:57:42,320 api 12908 10080 ChatWithPDFView initialized
+INFO 2025-12-22 00:58:04,692 kafka_producer 19860 11616 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:58:04,692 kafka_producer 19860 11616 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:58:04,692 kafka_producer 19860 11616 Kafka producer disabled by configuration
+INFO 2025-12-22 00:58:51,473 kafka_producer 1540 2004 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:58:51,478 kafka_producer 1540 2004 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:58:51,481 kafka_producer 1540 2004 Kafka producer disabled by configuration
+INFO 2025-12-22 00:58:59,090 kafka_producer 11420 20704 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:58:59,090 kafka_producer 11420 20704 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:58:59,090 kafka_producer 11420 20704 Kafka producer disabled by configuration
+INFO 2025-12-22 00:59:04,721 kafka_producer 20324 25684 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:59:04,721 kafka_producer 20324 25684 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:59:04,721 kafka_producer 20324 25684 Kafka producer disabled by configuration
+INFO 2025-12-22 00:59:13,526 kafka_producer 6512 9272 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:59:13,526 kafka_producer 6512 9272 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:59:13,526 kafka_producer 6512 9272 Kafka producer disabled by configuration
+INFO 2025-12-22 00:59:45,008 kafka_producer 17596 26560 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 00:59:45,008 kafka_producer 17596 26560 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 00:59:45,009 kafka_producer 17596 26560 Kafka producer disabled by configuration
+INFO 2025-12-22 00:59:46,813 api 17596 26560 UploadPDFView initialized
+INFO 2025-12-22 00:59:46,813 api 17596 26560 ChatWithPDFView initialized
+INFO 2025-12-22 00:59:55,456 api 17596 24744 Retrieved 5 chunks for question: about mt leetcode
+INFO 2025-12-22 00:59:55,457 api 17596 24744 Chunks content preview:
+INFO 2025-12-22 01:00:09,988 api 17596 24744 Retrieved 5 chunks for question: tell me about my achievements
+INFO 2025-12-22 01:00:09,988 api 17596 24744 Chunks content preview:
+INFO 2025-12-22 01:00:31,581 kafka_producer 26576 22152 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 01:00:31,582 kafka_producer 26576 22152 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 01:00:31,582 kafka_producer 26576 22152 Kafka producer disabled by configuration
+INFO 2025-12-22 01:00:37,975 kafka_producer 12620 26256 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 01:00:37,975 kafka_producer 12620 26256 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 01:00:37,975 kafka_producer 12620 26256 Kafka producer disabled by configuration
+INFO 2025-12-22 01:00:42,235 api 12620 26256 UploadPDFView initialized
+INFO 2025-12-22 01:00:42,236 api 12620 26256 ChatWithPDFView initialized
+INFO 2025-12-22 01:00:47,383 kafka_producer 9428 21636 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 01:00:47,384 kafka_producer 9428 21636 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 01:00:47,384 kafka_producer 9428 21636 Kafka producer disabled by configuration
+INFO 2025-12-22 01:00:50,305 api 9428 21636 UploadPDFView initialized
+INFO 2025-12-22 01:00:50,305 api 9428 21636 ChatWithPDFView initialized
+INFO 2025-12-22 01:01:00,327 kafka_producer 24940 25688 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 01:01:00,327 kafka_producer 24940 25688 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 01:01:00,327 kafka_producer 24940 25688 Kafka producer disabled by configuration
+INFO 2025-12-22 01:01:15,751 kafka_producer 26284 21176 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 01:01:15,751 kafka_producer 26284 21176 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 01:01:15,751 kafka_producer 26284 21176 Kafka producer disabled by configuration
+INFO 2025-12-22 01:01:18,693 api 26284 21176 UploadPDFView initialized
+INFO 2025-12-22 01:01:18,693 api 26284 21176 ChatWithPDFView initialized
+INFO 2025-12-22 01:01:27,589 api 26284 23972 Retrieved 5 chunks for question: hi
+INFO 2025-12-22 01:01:27,591 api 26284 23972 Chunks content preview:
+INFO 2025-12-22 01:01:43,911 kafka_producer 24836 9572 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 01:01:43,911 kafka_producer 24836 9572 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 01:01:43,911 kafka_producer 24836 9572 Kafka producer disabled by configuration
+INFO 2025-12-22 01:01:46,841 api 24836 9572 UploadPDFView initialized
+INFO 2025-12-22 01:01:46,841 api 24836 9572 ChatWithPDFView initialized
+INFO 2025-12-22 01:01:57,607 kafka_producer 25248 24764 Initializing Kafka producer. Enabled: False
+INFO 2025-12-22 01:01:57,607 kafka_producer 25248 24764 Kafka bootstrap servers: localhost:9092
+INFO 2025-12-22 01:01:57,607 kafka_producer 25248 24764 Kafka producer disabled by configuration
+INFO 2025-12-22 01:01:59,419 api 25248 24764 UploadPDFView initialized
+INFO 2025-12-22 01:01:59,419 api 25248 24764 ChatWithPDFView initialized
